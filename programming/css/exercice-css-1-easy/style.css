@@ -15,4 +15,9 @@ div{
     display:block;
     background: lightgray;
     font-style: italic;
+    margin-left: 2px;
+}
+
+.marge{
+    margin-left:10px;
 }
