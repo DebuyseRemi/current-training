@@ -1,0 +1,18 @@
+p {
+    color: blue;
+}
+
+p.important{
+    color:red;
+}
+
+#special {
+    color: green;
+    text-decoration: underline;
+}
+
+div{
+    display:block;
+    background: lightgray;
+    font-style: italic;
+}
