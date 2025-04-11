@@ -121,11 +121,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .line{
     width: 930px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid rgb(0, 140, 255)
     }
 
 .blue{
-    color:blue;
+    color:rgb(0, 140, 255);
 }
 
 .section{
@@ -138,21 +138,12 @@ h1, h2, h3, h4, h5, h6 {
     
     background-color: white;
     padding: 3px 2px;
-    width: 33%;
 }
 
 .rectangle{
     background-color: white;
-    padding: 3px 2px;
-    margin:10px 5px ;
-}
-
-li{
-    margin-left:20px;
-}
-
-ol{
-    padding-left: 0px;
+    padding: 10px 10px;
+    margin:20px 10px ;
 }
 
 #espace{
@@ -168,4 +159,18 @@ ol{
 #ombre{
     text-shadow:
     1px 1px 2px rgb(63, 61, 61);
+}
+
+.grille{
+display: grid;
+gap:20px;
+grid-template-columns: repeat(3,1fr);
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.espace{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color:gray;
 }
