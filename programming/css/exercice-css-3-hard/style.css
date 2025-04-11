@@ -1,0 +1,171 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+} 
+
+@font-face{
+    font-family: Montserrat Bold;
+    src: url(fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans Bold;
+    src: url(fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans Regular;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+.montserrat-bold{
+    font-family: Montserrat Bold;
+}
+
+.montserrat-regular{
+    font-family: Montserrat Regular;
+}
+
+.opensans-bold{
+    font-family: OpenSans Bold;
+}
+
+.opensans-regular{
+    font-family: Opensans Regular;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+#banner{
+    color:white;
+    text-align: center;
+    background: linear-gradient(to right, rgb(255, 230, 0), darkorange);
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+#under{
+    text-decoration: underline white;
+}
+
+.line{
+    width: 930px;
+    border-bottom: 1px solid blue;
+    }
+
+.blue{
+    color:blue;
+}
+
+.section{
+    background-color: rgb(247, 243, 243);
+    margin: 5% 20% ;
+    padding:20px 15px;
+    }
+
+.case{
+    
+    background-color: white;
+    padding: 3px 2px;
+    width: 33%;
+}
+
+.rectangle{
+    background-color: white;
+    padding: 3px 2px;
+    margin:10px 5px ;
+}
+
+li{
+    margin-left:20px;
+}
+
+ol{
+    padding-left: 0px;
+}
+
+#espace{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#petit{
+    font-size: 90%;
+    color:gray;
+}
+
+#ombre{
+    text-shadow:
+    1px 1px 2px rgb(63, 61, 61);
+}
