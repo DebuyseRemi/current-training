@@ -64,20 +64,20 @@
 
 table{
     border-collapse: collapse;
-    margin-left: 25%;
+    margin-left: 10%;
     margin-top: 2%;
-    width: 50%;
+    width: 80%;
     background-color: rgb(243, 242, 242);
 }
 
 td {
-    width: 4em;
+    width: 40%;
     padding-left: 2%;
     border-left:none;
     border-right:none;
     border-collapse: collapse;
     border-bottom: solid 1px rgb(218, 215, 215);
-    font-weight: 100;
+    font-weight: 200;
     padding-left: 5%;
 }
 tbody{
@@ -112,4 +112,12 @@ thead{
 #alignement{
     text-align:end;
     padding-right: 2%;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+
+}
+body {
+    font-family: Poppins;
 }
