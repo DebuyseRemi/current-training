@@ -1,0 +1,91 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  } 
+
+thead{
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(0, 255, 55));
+    color: white;
+    text-align:center;
+}
+
+#marge{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#fondnoir{
+    color:white;
+    background-color: #051925;
+}
+
+.fondblanc{
+    background-color:white;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 40%;
+    background-color: rgb(243, 242, 242);
+}
+
+td {
+    width: 4em;
+    padding-left: 2%;
+    border-left:none;
+    border-right:none;
+    border-collapse: collapse;
+}
+
+th {
+    width: 20%;
+    border-left:none;
+    border-right:none;
+    border-collapse: collapse;
+}
