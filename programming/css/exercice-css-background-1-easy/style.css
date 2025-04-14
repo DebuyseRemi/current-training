@@ -1,0 +1,13 @@
+#background-element{
+    background-image: url("images/jinx.jpg");
+    background-size:1700px 1000px;
+    background-repeat: no-repeat;
+    padding: 29%;
+    border: solid 4px purple;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 80px;
+}

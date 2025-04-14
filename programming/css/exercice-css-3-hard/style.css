@@ -66,6 +66,9 @@ h1, h2, h3, h4, h5, h6 {
     src: url(fonts/OpenSans-Regular.ttf);
 }
 
+body  {
+  font-family: OpenSans Regular;
+}
 .montserrat-bold{
     font-family: Montserrat Bold;
 }
@@ -121,7 +124,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .line{
     width: 930px;
-    border-bottom: 1px solid rgb(0, 140, 255)
+    border-bottom: 1px solid rgb(0, 140, 255);
+    margin-top:10px;
     }
 
 .blue{
@@ -129,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section{
-    background-color: rgb(247, 243, 243);
+    background-color: rgb(229, 240, 240);
     margin: 5% 20% ;
     padding:20px 15px;
     }
@@ -137,7 +141,7 @@ h1, h2, h3, h4, h5, h6 {
 .case{
     
     background-color: white;
-    padding: 3px 2px;
+    padding: 10px 20px;
 }
 
 .rectangle{
@@ -161,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
     1px 1px 2px rgb(63, 61, 61);
 }
 
-.grille{
+.grille{ /* faire une grille de 6 cases pour organiser la zone*/
 display: grid;
 gap:20px;
 grid-template-columns: repeat(3,1fr);
@@ -173,4 +177,14 @@ margin-bottom: 20px;
     margin-top: 10px;
     margin-bottom: 5px;
     color:gray;
+}
+
+#taille{
+  font-size:1vw;
+}
+
+
+#taillespace{
+    font-size:1vw;
+    letter-spacing:0.5vw;
 }
