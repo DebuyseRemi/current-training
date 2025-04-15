@@ -1,7 +1,9 @@
 #background-element{
     background-image: url("images/jinx.jpg");
     background-size:1700px 1000px;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 29%;
     border: solid 4px purple;
 }
