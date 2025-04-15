@@ -1,101 +1,55 @@
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  /* 2. Remove default margin */
-  * {
-    margin: 0;
-  }
-  
-  body {
-    /* 3. Add accessible line-height */
-    line-height: 1.5;
-    /* 4. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
-  }
-  
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  
-  /* 8. Improve line wrapping */
-  p {
-    text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
-  }
-  
-  /*
-    9. Create a root stacking context
-  */
-  #root, #__next {
-    isolation: isolate;
-  } 
-  
-  @font-face{
-      font-family: OW Normal;
-      src: url(fonts/OUTERwilds-Normal.otf);
-  }
-  
-  @font-face {
-      font-family: OW Starry;
-      src: url(fonts/OUTERwilds-Starry.otf);
-  }
-
-  h1{
-    font-family: OW Normal;
-    color: orangered;
-    text-align: center;
-    margin-top: 5%;
-  }
-
-  footer{
-    font-family: OW Starry;
-    color: white;
-  }
-
-html{
-    height: 100%;
+@font-face {
+  font-family: "OW Normal";
+  src: url(fonts/OUTERwilds-Normal.otf);
 }
 
-.rectangle{
-    background-color:rgba(0, 4, 255, 0.178);
-    margin-left:25%;
-    margin-right:25%;
-    margin-top: 2%;
-    width:50;
-    font-family: OW Normal;
-    color: rgb(68, 243, 24);
-    padding: 1%;
+@font-face {
+  font-family: "OW Starry";
+  src: url(fonts/OUTERwilds-Starry.otf);
 }
 
-  #background{
-    background-image: url("images/ow.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;/* Pour empêchele défilement de l'image*/
-  }
-
-a:hover{
-color:gold;
+html {
+  height: 100%;
 }
 
-footer{
-    margin-top: 21%;
-    text-align:center;
+body{
+    font-family: "OW Normal";
+}
+
+h1 {
+  color: orangered;
+  text-align: center;
+  margin-top: 5%;
+}
+
+footer {
+  font-family: "OW Starry";
+  color: white;
+}
+
+.rectangle {
+  background-color: rgba(0, 4, 255, 0.178);
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 2%;
+  width: 50;
+  color: rgb(68, 243, 24);
+  padding: 1%;
+}
+
+#background {
+  background-image: url("images/ow.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Pour empêcher le défilement de l'image*/
+}
+
+a:hover {
+  color: gold;
+}
+
+footer {
+  margin-top: 21%;
+  text-align: center;
 }

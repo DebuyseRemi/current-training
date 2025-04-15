@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "OW Normal";
+    src: url(fonts/OUTERwilds-Normal.otf);
+  }
+  
+  @font-face {
+    font-family: "OW Starry";
+    src: url(fonts/OUTERwilds-Starry.otf);
+  }
+
+ html {
+    height: 100%;
+  }
+  
+  body{
+      font-family: "OW Normal";
+  }
+  
+  h2 {
+    color: rgb(76, 0, 255);
+    text-align: left;
+    margin-top: 2%;
+    margin-left:2%;
+    margin-right:10%;
+    display:inline-block
+  }
+  
+
+  h4{
+    color:azure;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    display:inline-block;
+  }
+
+h3{
+  text-align: center;
+  color:lightgray;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+  
+  footer {
+    font-family: "OW Starry";
+    color: white;
+  }
+  
+  .rectangle {
+    background-color: rgba(0, 4, 255, 0.178);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2%;
+    width: 50;
+    color: rgb(68, 243, 24);
+    padding: 1%;
+  }
+  
+  #background {
+    background-image: url("images/bg-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Pour empêcher le défilement de l'image*/
+  }
+  
+  a:hover {
+    color: gold;
+  }
+
+  h4:hover{
+    color: rgb(36, 168, 3);
+    border-left :solid rgba(11, 126, 180, 0.692);
+    border-right:solid rgba(11, 126, 180, 0.692);
+  }
+  
+  footer {
+    margin-top: 21%;
+    text-align: center;
+  }
+
+  #premieresection{
+    width:50%;
+    margin-top: 12%;
+    background-color: rgba(1, 2, 78, 0.781);
+    margin-left:25%;
+    text-align: center;
+  }
+  #secondesection{
+    margin-top: 3%;
+    color:rgb(184, 4, 255);
+    width:60%;
+    background-color: rgba(0, 0, 10, 0.842);
+    margin-left:20%;
+    text-align: center;
+  }
+
+  .minisection{
+    width:30%;
+    display:inline-block;
+    margin:1%;
+  }
+
+  .minisection:hover{
+    background-color: rgba(138, 74, 0, 0.842);
+    color:rgb(255, 0, 234);
+  }
+
+  button{
+    background-color:yellow;
+  }
+  
+  button:hover{
+    background-color:orange;
+  }
+  
+  button:focus{
+    background-color:red;
+  }
+
+  .dnger{
+    color:red;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  @media screen and (max-width: 720px) {
+    #background {
+        background-image: url("images/bg-phone.png");
+    }
+  }
+
+  @media screen and (min-width: 721px) and (max-width: 1366px) {
+    #background {
+        background-image: url("images/bg-tablet.jpg");
+    }
+  }
+
