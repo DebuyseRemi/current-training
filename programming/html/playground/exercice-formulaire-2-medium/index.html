@@ -27,7 +27,7 @@
         </div>
 
         <div>
-            <label for="password">Mot de passe<label>
+            <label for="password">Mot de passe</label>
             <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
             <p class="gris">Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre</p>
         </div>
@@ -48,32 +48,33 @@
             <label class="b"><input type="radio" name="genre" value="female"> Femme</label>
             <label class="b"><input type="radio" name="genre" value="other"> Autre</label>
         </div>
-    <div class="c">
-        <label for="pays">Pays:</label>
-        <select id="pays" name="pays">
-          <option value="">Sélectionnez votre pays</option>
-          <option value="fr">France</option>
-          <option value="be">Belgique</option>
-          <option value="ch">Suisse</option>
-          <option value="ca">Canada</option>
-        </select>
-      </div>
-      <div class="c">
-        <label>
-          <input type="checkbox" name="terms" required>
-          J'accepte les conditions d'utilisation
-        </label>
-      </div>
+        
+        <div class="c">
+            <label for="pays">Pays:</label>
+            <select id="pays" name="pays" required>
+            <option value="">Sélectionnez votre pays</option>
+            <option value="fr">France</option>
+            <option value="be">Belgique</option>
+            <option value="ch">Suisse</option>
+            <option value="ca">Canada</option>
+            </select>
+        </div>
+        <div class="c">
+            <label>
+            <input type="checkbox" name="terms" required>
+            J'accepte les <a href>conditions d'utilisation</a> et la <a href>politique de confidentialité</a>
+            </label>
+        </div>
     
-      <div class="c a">
-        <label>
-          <input type="checkbox" name="newsletter" checked>
-          Je souhaite recevoir la newsletter
-        </label>
-      </div>
-      <div class="a d">
-      <input type="reset" id="myReset" value="Réinitialiser">
-      <button type="submit">S'inscrire</button>
+        <div class="c a">
+            <label>
+            <input type="checkbox" name="newsletter" checked>
+            Je souhaite recevoir la newsletter
+            </label>
+        </div>
+        <div class="a d">
+            <input type="reset" id="myReset" value="Réinitialiser">
+            <button type="submit">S'inscrire</button>
         </div>
     </form>
 </div>  
