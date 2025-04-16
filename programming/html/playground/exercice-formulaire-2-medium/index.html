@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Seconde page formulaire</title>
+</head>
+
+<div class="container">
+    <form action="/submit-form" method="post">
+        <h1>Créer un compte</h1>
+        <div>
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+        </div>
+
+        <div>
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Mot de passe<label>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+            <p class="gris">Le mot de passe doit contenir au moins 8 caractères, une majuscule, une minuscule et un chiffre</p>
+        </div>
+        
+        <div>
+            <label for="confirmpassword">Confirmer le mot de passe</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
+        </div>
+
+        <div>
+            <label for="date">Date de naissance</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <div>
+            <label class="a">Genre:</label>
+            <label class="b"><input type="radio" name="genre" value="male"> Homme</label>
+            <label class="b"><input type="radio" name="genre" value="female"> Femme</label>
+            <label class="b"><input type="radio" name="genre" value="other"> Autre</label>
+        </div>
+    <div class="c">
+        <label for="pays">Pays:</label>
+        <select id="pays" name="pays">
+          <option value="">Sélectionnez votre pays</option>
+          <option value="fr">France</option>
+          <option value="be">Belgique</option>
+          <option value="ch">Suisse</option>
+          <option value="ca">Canada</option>
+        </select>
+      </div>
+      <div class="c">
+        <label>
+          <input type="checkbox" name="terms" required>
+          J'accepte les conditions d'utilisation
+        </label>
+      </div>
+    
+      <div class="c a">
+        <label>
+          <input type="checkbox" name="newsletter" checked>
+          Je souhaite recevoir la newsletter
+        </label>
+      </div>
+      <div class="a d">
+      <input type="reset" id="myReset" value="Réinitialiser">
+      <button type="submit">S'inscrire</button>
+        </div>
+    </form>
+</div>  
+</body>
+</html>
