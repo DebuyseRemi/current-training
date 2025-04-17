@@ -55,6 +55,8 @@ body{
     margin-left: 2%;
     margin-right:2%;
     font-family: Poppins;
+    width: 80%;
+    margin-left: 10%;
 }
 
 h2{
@@ -100,4 +102,9 @@ table{
 }
 .width{
   width: 95%;
+}
+
+
+.widthmoyen{
+  width: 75%;
 }
