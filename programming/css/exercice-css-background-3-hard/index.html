@@ -9,7 +9,7 @@
 </head>
 
 <body id="background">
-    <h2>22 Minutes pour explorer l'univers ca vous <a>va ?</a></h2>
+    <h2>22 Minutes pour explorer l'univers ca vous va ?</h2>
     <h4>Sablieres</h4>
     <h4>Atrebois</h4>
     <h4>Cravite</h4>
@@ -18,7 +18,7 @@
     <div id="premieresection">
         <h3>Vos premiers pas dans l'espace</h3>
         <p class="dnger">! Attention au lancement !</p>
-        <button type="button">Lancer</button>
+        <button type="button" onclick="window.location.href='https://www.mobiusdigitalgames.com/';" >Lancer</button>
 
     </div>
 
@@ -32,8 +32,33 @@
         <div class="minisection">
             <p>Souvenez vous du sixieme emplacement</p>
         </div>
-
     </div>
+
+        <div class="container">
+            <form action="/submit-form" method="post">
+                <h2>Precommander le jeu</h2>
+                <div>
+                  <label for="name">Nom :</label>
+                  <input type="text" id="name" class="zone" name="name" required>
+                </div>
+              
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" class="zone" name="email" required>
+                </div>
+                <div>
+                    <label>
+                      <input type="checkbox" name="terms" checked>
+                      Je souhaite recevoir les actus du jeu.
+                    </label>
+                </div>
+                
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>  
+
     <footer>
         ©  2019 -  Mobius Digital
     </footer>

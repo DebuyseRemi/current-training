@@ -41,11 +41,6 @@ h3{
   margin-right: 2%;
 }
   
-  footer {
-    font-family: "OW Starry";
-    color: white;
-  }
-  
   .rectangle {
     background-color: rgba(0, 4, 255, 0.178);
     margin-left: 25%;
@@ -63,28 +58,20 @@ h3{
     background-size: cover;
     background-attachment: fixed; /* Pour empêcher le défilement de l'image*/
   }
-  
-  a:hover {
-    color: gold;
-  }
 
   h4:hover{
     color: rgb(36, 168, 3);
     border-left :solid rgba(11, 126, 180, 0.692);
     border-right:solid rgba(11, 126, 180, 0.692);
   }
-  
-  footer {
-    margin-top: 21%;
-    text-align: center;
-  }
 
   #premieresection{
-    width:50%;
+    width:40%;
     margin-top: 12%;
     background-color: rgba(1, 2, 78, 0.781);
-    margin-left:25%;
+    margin-left:30%;
     text-align: center;
+    padding-bottom: 1%;
   }
   #secondesection{
     margin-top: 3%;
@@ -95,6 +82,29 @@ h3{
     text-align: center;
   }
 
+  .container{
+    width:35%;
+    margin-left:32.5%;
+    margin-top:10%;
+    border-radius: 3px;
+    background-color: rgba(104, 86, 3, 0.651);
+    padding: 1%;
+    color:rgb(255, 115, 0);
+    }
+
+.zone
+    {
+      width: 95%;
+      border: solid rgba(185, 185, 185, 0.733);
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.733);
+      margin-bottom: 2%;
+      margin-top: 2%;
+  }
+
+.container{
+    text-align: center;
+  }
   .minisection{
     width:30%;
     display:inline-block;
@@ -107,15 +117,22 @@ h3{
   }
 
   button{
+    margin-top:2%;
     background-color:yellow;
+    border:solid yellow;
+    border-radius:2px;
   }
   
   button:hover{
     background-color:orange;
+    border:solid orange;
+    border-radius:2px;
   }
   
   button:focus{
     background-color:red;
+    border:solid red;
+    border-radius:2px;
   }
 
   .dnger{
@@ -123,16 +140,113 @@ h3{
     margin-top: 1%;
     margin-bottom: 1%;
   }
+
   
+  footer{
+    margin-top:5%;
+    text-align: center;
+    font-family: "OW Starry";
+    color: white;
+    background-color: rgba(0, 0, 0, 0.678);
+  }
+
+
   @media screen and (max-width: 720px) {
     #background {
         background-image: url("images/bg-phone.png");
     }
+    h2 {
+      color: rgb(76, 0, 255);
+      text-align: center;
+      margin-top: 2%;
+      margin-left:15%;
+      margin-right:15%;
+      display: block;
+      margin-bottom: 4%;
+    }
+
+    h4{
+      text-align: center;
+      color:azure;
+      margin-top: 2%;
+      display: block;
+    }
+
+    #secondesection{
+      margin-top: 3%;
+      color:rgb(184, 4, 255);
+      width:80%;
+      background-color: rgba(0, 0, 10, 0.842);
+      margin-left:10%;
+      text-align: center;
+    }
+
+    .minisection{
+      width: 70%;
+
+    }
+
+    #premieresection{
+      width:80%;
+      margin-top: 5%;
+      background-color: rgba(1, 2, 78, 0.781);
+      margin-left:10%;
+      text-align: center;
+      padding-bottom: 1%;
+    }
+
+    .container{
+      width:80%;
+      margin-left:10%;
+      margin-top:7%;
+      border-radius: 3px;
+      background-color: rgba(104, 86, 3, 0.651);
+      padding: 1%;
+      color:rgb(255, 115, 0);
+      }
   }
 
   @media screen and (min-width: 721px) and (max-width: 1366px) {
     #background {
         background-image: url("images/bg-tablet.jpg");
     }
+
+    h2 {
+      color: rgb(76, 0, 255);
+      text-align: center;
+      margin-top: 2%;
+      margin-left:15%;
+      margin-right:15%;
+      display: block;
+      margin-bottom: 4%;
+    }
+
+    h4{
+      text-align: center;
+      color:azure;
+      margin-top: 2%;
+      margin-right: 40%;
+      margin-left: 45%;
+      display: block;
+    }
+
+    #premieresection{
+      width:50%;
+      margin-top: 5%;
+      background-color: rgba(1, 2, 78, 0.781);
+      margin-left:25%;
+      text-align: center;
+      padding-bottom: 1%;
+    }
+
+    .container{
+      width:50%;
+      margin-left:25%;
+      margin-top:7%;
+      border-radius: 3px;
+      background-color: rgba(104, 86, 3, 0.651);
+      padding: 1%;
+      color:rgb(255, 115, 0);
+      }
   }
 
