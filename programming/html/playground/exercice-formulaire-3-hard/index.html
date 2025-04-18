@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Troisième page formulaire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/submit-form" method="post">
+            <h1>Demande de devis </h1>
+                <div class="progress-container">
+                  <div class="progress" id="progress"> </div>
+                  <div class="circle active">1</div>
+                  <div class="circle">2</div>
+                  <div class="circle">3</div>
+                </div>
+            <h2>Informations personnelles</h2>
+            <div>
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" class="rect" name="prenom" required>
+            </div>
+    
+            <div>
+                <label for="name">Nom</label>
+                <input type="text" id="name" class="rect" name="name" required>
+            </div>
+    
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="rect" name="email" required>
+            </div>
+
+            <div>
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" class="rect" name="telephone" required>
+            </div>
+
+            <button type="submit"><strong>Suivant</strong></button>
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="/submit-form" method="post">
+            <h1>Demande de devis </h1>
+                <div class="progress-container">
+                  <div class="progress" id="progress"> </div>
+                  <div class="circle active">1</div>
+                  <div class="circle active">2</div>
+                  <div class="circle">3</div>
+                </div>
+            <h2>Détails du projet</h2>
+            <div>
+              <label for="prenom">Type de projet</label>
+              <select id="pays" class="rect" name="pays" required>
+                <option value="">Sélectionnez un type</option>
+                <option value="se">Sérieux</option>
+                <option value="fu">Fun</option>
+                <option value="au">Autre</option>
+                </select>
+            </div>
+    
+            <div>
+                <label for="name">Budget approximatif</label>
+                <select id="pays" class="rect" name="pays" required>
+                    <option value="">Sélectionnez votre pays</option>
+                    <option value="mil">0 à 1000</option>
+                    <option value="dmil">1000 à 10 000</option>
+                    <option value="cmil">10 000 à 100 000</option>
+                    <option value="riche">Plus de 100 000</option>
+                    </select>
+            </div>
+    
+            <div>
+                <label for="email">Date de livraison souhaitée</label>
+                <input type="date" id="date" class="rect name="date" required>
+            </div>
+
+            <div>
+                <label for="telephone">Description du projet</label>
+                <textarea id="message" class="rect" name="message" rows="4" cols="50" required></textarea>
+            </div>
+
+            <button type="submit"><strong>Suivant</strong></button>
+        </form>
+    </div>
+
+    <div class="container">
+        <form action="/submit-form" method="post">
+            <h1>Demande de devis </h1>
+            <div class="progress-container">
+                <div class="progress" id="progress"> </div>
+                <div class="circle active">1</div>
+                <div class="circle active">2</div>
+                <div class="circle active">3</div>
+              </div>
+          <h2>Préférences et soumission</h2>
+          <div>
+            <label for="fonction">Fonctionnalités souhaités</label>
+            <div><input type="checkbox" name="dr"> Design responsive</div>
+            <div><input type="checkbox" name="sgc">Système de gestion de contenu</div>
+            <div><input type="checkbox" name="oa">Outil d'analyse</div>
+            <div><input type="checkbox" name="os">Optimisation SEO</div>
+            <div><input type="checkbox" name="irs">Intégration réseaux sociaux</div>
+  
+          <div>
+              <label for="name">Budget approximatif</label>
+              <select id="pays" class="rect" name="contact" required>
+                  <option value=""></option>
+                  <option value="email">Email</option>
+                  <option value="telephone">telephone</option>
+                  <option value="réseaux">réseaux sociaux</option>
+                  <option value="autre">Autre</option>
+                  </select>
+          </div>
+
+            <div>
+                <label for="infos">Informations complémentaires</label>
+                <textarea id="message" class="rect" name="infos" rows="4" cols="50" required></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="terms" required>
+                J'accepte que mes informations soient utilisées pour me contacter
+            </div>
+
+            <button type="submit"><strong>Suivant</strong></button>
+        </form>
+    </div>
+
+</body>
+</html>
