@@ -104,3 +104,18 @@ button{
     border-color: rgb(0, 162, 255);
     background:rgb(0, 162, 255);
   }
+
+
+.espace{
+    display:block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+h3{
+    color:lightgreen;
+}
+
+.center{
+    text-align:center;
+}

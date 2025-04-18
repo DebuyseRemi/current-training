@@ -50,7 +50,7 @@
         <form action="/submit-form" method="post">
             <h1>Demande de devis </h1>
                 <div class="progress-container">
-                  <div class="progress" id="progress"> </div>
+                  <div class="progress" id="progress"></div>
                   <div class="circle active">1</div>
                   <div class="circle active">2</div>
                   <div class="circle">3</div>
@@ -103,19 +103,19 @@
           <h2>Préférences et soumission</h2>
           <div>
             <label for="fonction">Fonctionnalités souhaités</label>
-            <div><input type="checkbox" name="dr"> Design responsive</div>
-            <div><input type="checkbox" name="sgc">Système de gestion de contenu</div>
-            <div><input type="checkbox" name="oa">Outil d'analyse</div>
-            <div><input type="checkbox" name="os">Optimisation SEO</div>
-            <div><input type="checkbox" name="irs">Intégration réseaux sociaux</div>
+            <div class="espace"><input type="checkbox" name="dr"> Design responsive</div>
+            <div class="espace"><input type="checkbox" name="sgc"> Système de gestion de contenu</div>
+            <div class="espace"><input type="checkbox" name="oa"> Outil d'analyse</div>
+            <div class="espace"><input type="checkbox" name="os"> Optimisation SEO</div>
+            <div class="espace"><input type="checkbox" name="irs"> Intégration réseaux sociaux</div>
   
           <div>
               <label for="name">Budget approximatif</label>
               <select id="pays" class="rect" name="contact" required>
                   <option value=""></option>
                   <option value="email">Email</option>
-                  <option value="telephone">telephone</option>
-                  <option value="réseaux">réseaux sociaux</option>
+                  <option value="telephone">Telephone</option>
+                  <option value="réseaux">Réseaux sociaux</option>
                   <option value="autre">Autre</option>
                   </select>
           </div>
@@ -131,6 +131,22 @@
             </div>
 
             <button type="submit"><strong>Suivant</strong></button>
+        </form>
+    </div>
+</div>
+    
+    <div class="container">
+        <form action="/submit-form" method="post">
+            <h1>Demande de devis </h1>
+            <div class="progress-container">
+                <div class="progress" id="progress"> </div>
+                <div class="circle">1</div>
+                <div class="circle">2</div>
+                <div class="circle active">3</div>
+            </div>
+          <h3 class="center">Merci pour votre demande !</h3>
+          <p class="center">Nous avons bien reçu votre demande de devis et nous vous contacterons très prochainement.</p>
+          <p class="center">Un email de confimation a été envoyé à l'adresse : <strong>blabla@gmail.com</strong></p>
         </form>
     </div>
 
