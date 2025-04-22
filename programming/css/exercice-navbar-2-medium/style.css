@@ -1,6 +1,7 @@
 #navbar{
     width: 100%;
-    position: fixed;
+    position: fixed;/*Nécessaire pour avoir la barre qui reste affichée pendant le défilement
+    top: 0;/*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
     display: flex;
     background-color: rgb(50, 48, 63);
     color:white;
@@ -37,6 +38,7 @@ border:solid rgb(0, 81, 255);
 color: white;
 border-radius: 3px;
 font-weight: 600;
+height: fit-content;
 }
 
 h3:hover{
@@ -57,7 +59,7 @@ h1{
 }
 
 #secondeSection{
-    padding: 5%;
+    display: flex;
     margin-top: 3%;
     width:100%;
     text-align: center;
@@ -66,9 +68,11 @@ h1{
   }
 
 .miniSection{
-    width:20%;
-    display:inline-block;
-    margin:1%;
+    display: flex;
+    width:20em;
+    flex-direction:column;
+    height: 11em;
+    margin:1em;
     border: solid 1px lightgray;
   }
 
@@ -98,4 +102,32 @@ h1{
 
 .margeBot{
     margin-bottom: 1%;
+}
+
+
+footer{
+    color:white;
+    background-color: rgb(50, 48, 63);
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.material-icon{
+    color:blue;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
 }
