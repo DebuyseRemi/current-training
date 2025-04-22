@@ -1,4 +1,6 @@
 #navbar{
+    width: 100%;
+    position: fixed;
     display: flex;
     background-color: rgb(50, 48, 63);
     color:white;
@@ -10,6 +12,7 @@
 
 h2{
     width:60%;
+    margin-bottom: 1%;
 }
 
 .underline{
@@ -51,4 +54,48 @@ h1{
     flex-direction:column;
     align-items:center;
     justify-content:center;
+}
+
+#secondeSection{
+    padding: 5%;
+    margin-top: 3%;
+    width:100%;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+  }
+
+.miniSection{
+    width:20%;
+    display:inline-block;
+    margin:1%;
+    border: solid 1px lightgray;
+  }
+
+  #troisiemeSection{
+    background-color: lightgray;
+    padding: 5%;
+  }
+
+#portfolio{
+    border: dashed;
+    color: gray;
+    background-color: white;
+    padding:3% 2%;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+.section{
+    padding: 5%;
+}
+
+#para{
+    display: flex;
+    flex-direction: column;
+}
+
+.margeBot{
+    margin-bottom: 1%;
 }
