@@ -1,0 +1,18 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:fill;/*utiliser pour qu'elle couvre bien toute la page*/
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(14, 14, 14, 0.356);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    text-align:center;
+  }
