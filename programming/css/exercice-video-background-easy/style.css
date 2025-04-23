@@ -16,3 +16,24 @@
     padding: 20px;
     text-align:center;
   }
+
+  #centre{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position:fixed;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    gap:1em;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.466);
+  }
+
+button{
+  background-color: blue;
+  color: white;
+  padding: 1em;
+  border: solid 1px blue;
+  border-radius: 1em;
+}
