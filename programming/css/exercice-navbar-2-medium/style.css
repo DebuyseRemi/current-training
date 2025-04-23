@@ -32,7 +32,7 @@ body
     height: 100%;
 }
 
-button{
+.buton{
 background-color:rgb(0, 81, 255) ;
 border:solid rgb(0, 81, 255);
 color: white;
@@ -41,7 +41,11 @@ font-weight: 600;
 height: fit-content;
 }
 
-h3:hover{
+h3{
+    height: fit-content;
+}
+
+a:hover{
     color:rgb(0, 81, 255);
     border-bottom: solid 1px rgb(0, 81, 255);
 }
@@ -51,7 +55,7 @@ h1{
 }
 
 #centre{
-    height:30em;
+    height:40em;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -69,19 +73,20 @@ h1{
 
 .miniSection{
     display: flex;
-    width:20em;
+    width:30em;
     flex-direction:column;
-    height: 11em;
-    margin:1em;
-    border: solid 1px lightgray;
+    height: 14em;
+    margin-right:1em;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    padding: 2em;
   }
 
-  #troisiemeSection{
+.troisiemeSection{
     background-color: lightgray;
     padding: 5%;
   }
 
-#portfolio{
+.portfolio{
     border: dashed;
     color: gray;
     background-color: white;
@@ -130,4 +135,18 @@ footer{
     direction: ltr;
     -moz-font-feature-settings: 'liga';
     -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.buton:hover{
+    color:white;
+    border-bottom: solid 3px rgb(0, 81, 255);
+}
+
+a:focus{
+    text-decoration: none;
 }
