@@ -12,8 +12,15 @@
 }
 
 h2{
-    width:60%;
     margin-bottom: 1%;
+    background:linear-gradient(to right, purple, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#separ{
+    width:46em;
 }
 
 .underline{
@@ -122,7 +129,7 @@ footer{
 }
 
 .material-icon{
-    color:blue;
+    color:purple;
     font-family: 'Material Icons';
     font-weight: normal;
     font-style: normal;
@@ -140,6 +147,7 @@ footer{
 a{
     color: white;
     text-decoration: none;
+    transition: all 1s ease-out;
 }
 
 .buton:hover{
