@@ -14,9 +14,10 @@ body
     height: 100%;
     grid-template-areas:
       "head head head"
-      "nav main sidebar";
-    grid-template-columns: 1.5fr 8fr 2.5fr;
-    grid-template-rows:  4em  1fr;
+      "nav main sidebar"
+      "foot foot foot";
+    grid-template-columns: 1.8fr 8fr 2.2fr;
+    grid-template-rows:  4em  1fr 15em;
 }
 
 
@@ -80,7 +81,6 @@ a{
     object-fit:cover;
     display: flex;
     flex-direction:column;
-    text-align:left;
     padding: 1em;
     margin-left:15em;
     margin-right: 15em;
@@ -95,6 +95,14 @@ a{
     flex-direction:column;
     padding: 1em;
     margin-left:1em;
+}
+
+#foot{
+    grid-area: foot;
+    background-color: rgb(17, 19, 110);
+    color:lightgray;
+    width: 100%;
+
 }
 
 .grid-container {
@@ -112,12 +120,18 @@ h3{
     margin-top: 2em;
 }
 
+
+#centre{
+    display: flex;
+    justify-content:center;
+}
 .button1{
+    display: flex;
     background-color: lightgreen;
     border:solid 1px lightgreen;
     border-radius:6px;
     margin:1em;
-    width: 8em;
+    width:fit-content;    
 }
 
 .button2{
@@ -157,5 +171,17 @@ h3{
     padding: 0.5em;
     border:solid 1px rgb(56, 56, 55);
     width: fit-content;
+    display: inline-block;
+}
+
+#grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin: 1em;
+}
+
+
+.inline{
     display: inline-block;
 }
