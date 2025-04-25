@@ -15,7 +15,7 @@ body
     grid-template-areas:
       "head head head"
       "nav main sidebar";
-    grid-template-columns: 1fr 10.5fr 1.5fr;
+    grid-template-columns: 1.5fr 8fr 2.5fr;
     grid-template-rows:  4em  1fr;
 }
 
@@ -60,12 +60,19 @@ body
   }
 
 a{
-    margin: 1em 1em 1em 0em;
+    color:black;
     text-decoration:none;
 }
-a:hover{
+
+.nava{
+    border:solid 1em lightgray;
+}
+
+.nava:hover{
     color:white;
-    background:lightgreen;
+    background-color:lightgreen;
+    border:solid 1em lightgreen;
+    border-radius: 3em;
 }
 
 #main{
@@ -75,8 +82,8 @@ a:hover{
     flex-direction:column;
     text-align:left;
     padding: 1em;
-    margin-left:11em;
-    margin-right: 11em;
+    margin-left:15em;
+    margin-right: 15em;
     justify-content: space-between;
 }
 
@@ -97,31 +104,40 @@ a:hover{
 }
 
 p{
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 h3{
     margin-top: 2em;
 }
 
-button{
+.button1{
     background-color: lightgreen;
+    border:solid 1px lightgreen;
+    border-radius:6px;
     margin:1em;
-    width: fit-content;
-    margin:0% 43%;
+    width: 8em;
+}
+
+.button2{
+    background-color: lightgreen;
+    border:solid 1px lightgreen;
+    border-radius:6px;
+    margin-top:1em;
+    margin-bottom: 1em;
 }
 
 .line{
     display: flex;
-    width: 1fr;
     border-bottom: 1px solid rgb(19, 1, 1);
     align-items: center;
+    margin-bottom: 1em;
     }
 
 .rect{
     display:block;
-    width: 95%;
+    width: 100%;
     border-color: rgb(56, 56, 55);
     border-radius: 3px;
     background-color: white;
@@ -131,3 +147,15 @@ button{
     padding-bottom: 1%;
     border:solid 1px rgb(56, 56, 55);
     }
+
+.rectangle{
+    border-color: rgb(56, 56, 55);
+    border-radius: 3px;
+    background-color: white;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border:solid 1px rgb(56, 56, 55);
+    width: fit-content;
+    display: inline-block;
+}
