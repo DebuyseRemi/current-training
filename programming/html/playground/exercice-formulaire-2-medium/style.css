@@ -32,7 +32,7 @@ textarea,select{
     background-color: white;
 }
 
-.rectorange{/* rajouter une classe pour simplifier tout ça*/
+.rectorange{
     display:block;
     width: 95%;
     border-color: lightgray;

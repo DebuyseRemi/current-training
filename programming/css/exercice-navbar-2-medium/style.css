@@ -1,7 +1,7 @@
 #navbar{
     width: 100%;
-    position: fixed;/*Nécessaire pour avoir la barre qui reste affichée pendant le défilement
-    top: 0;/*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
+    position: fixed;/*Nécessaire pour avoir la barre qui reste affichée pendant le défilement*/
+    top: 0; /*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
     display: flex;
     background-color: rgb(50, 48, 63);
     color:white;
