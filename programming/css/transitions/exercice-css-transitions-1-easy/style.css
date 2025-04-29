@@ -1,0 +1,70 @@
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+
+}
+
+body
+{
+    font-family: Poppins;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre{
+    margin:2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px 24px; /*0.75em 1.5em*/
+    font-size: 16px;
+    color:white;
+}
+
+.principal{
+    background-color: #329BD7;
+    border:solid 1px #329BD7;
+    border-radius: 1em;
+    transition: margin-top 0.5s;
+}
+
+.principal:hover{
+    margin-top: -0.5em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.secondaire{
+    background-color:#7D8C8C ;
+    border:solid 1px #7D8C8C;
+    border-radius: 1em;
+    transition: all 1s;
+}
+
+.secondaire:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.danger{
+    background-color: #E64C3D;
+    border:solid 1px #E64C3D;
+    border-radius:1em;
+    transition: transform 0.5s;
+}
+
+.danger:hover{
+    transform: rotate(4deg);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
