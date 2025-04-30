@@ -1,0 +1,126 @@
+:root {
+    --couleur-fond: white;
+    --couleur-texte: black;
+    --couleur-section: #F6F6F6;
+    --couleur-bordure:lightgray;
+    --couleur-titre:rgb(36,143,214);
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    font-family: Poppins;
+    transition: all 4s;
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte)
+}
+
+main{
+    padding-top: 10em;
+    background-color: var(--couleur-bordure);
+    padding-bottom: 5em;
+}
+
+.left{
+    text-align: left;
+    padding-left: 1em;
+  }
+
+h3{
+    color: var(--couleur-texte);
+    text-align: left;
+    padding-left: 1em;
+    padding-top: 0.5em;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    color: var(--couleur-texte);
+    justify-content: space-between;
+    padding: 1em;
+    padding-left: 5%;
+    padding-right:5%;
+    border-bottom: solid 2px var(--couleur-bordure);
+    background-color:  var(--couleur-fond);
+  }
+
+li{
+    list-style-type: none;
+}
+a{
+    color: var(--couleur-texte);
+    text-decoration: none;
+    transition: border-bottom 0.5s;
+}
+
+ul{
+    display: flex;
+    gap:2em;
+}
+
+.material-icon{
+    color:var(--couleur-texte);
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-osx-font-smoothing: grayscale;
+}
+.principal{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display:flex;
+    justify-content: center;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width:fit-content;
+    z-index: 1000;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+    justify-content: column;
+}
+.sous li{
+    display: inline-block;
+    vertical-align:top;
+    text-align: left;
+}
+
+.sous{
+    padding:0;
+}
+.sous a{
+    padding: 0;
+    border-bottom: none;
+}
+a:hover{
+    color: var(--couleur-titre);
+    border-bottom:solid 1px var(--couleur-titre);
+}
