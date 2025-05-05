@@ -68,7 +68,7 @@ ul {
 #image4{
     grid-column: 2;
     grid-row:3;
-
+    opacity: 0.5;
 }
 
 #image5{
@@ -81,7 +81,7 @@ ul {
 #image6{
     grid-column: 1;
     grid-row: 4;
-  
+    opacity: 0.5;
 }
 
 #image7{
@@ -93,6 +93,7 @@ ul {
 #image8{
     grid-column: 3;
     grid-row: 4;
+    opacity: 0.5;
 }
 
 img {
@@ -103,14 +104,14 @@ img {
 
 footer{
     background-color: black;
-    padding: 10em 5em;
+    padding: 3em 5em;
+    margin-top: 5px;
 }
 .line{
     display: flex;
     border-bottom: 1px solid rgb(233, 5, 5);
     align-items: center;
     margin-bottom: 1em;
-    padding-top: 2em;
     margin-top: 5px;
     margin-left: -2em;
     margin-right: -2em;
@@ -123,6 +124,7 @@ footer{
         grid-template-columns: repeat(5,1fr);
         grid-template-rows: repeat(2,1fr);
         grid-gap: 1em;
+        justify-items: center;
     }
 
 @media screen and (min-width: 992px) and (max-width: 1280px) {
@@ -238,6 +240,16 @@ footer{
     #image8{
         grid-column: 1;
         grid-row: 8;
+    }
+
+    .grid-container {
+        color: white;
+        margin-top:1em ;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-gap: 1em;
+        justify-items: center;
     }
 
 }
