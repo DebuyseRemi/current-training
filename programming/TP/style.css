@@ -15,10 +15,11 @@ ul {
     overflow: hidden;
     background-color: #000000;
     text-transform: uppercase;
-    padding-top: 1em;
+    padding-top: 1rem;
     padding-left: 1em;
   }
   
+  /*Penser à utiliser rem plutôt que em*/
   li {
     float: right;
   }
@@ -246,10 +247,20 @@ footer{
         color: white;
         margin-top:1em ;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);/* possible d'utiliser "grid-template-columns: repeat(auto-fit,minmax(100px,1fr)" commande utile*/
         grid-template-rows: repeat(4,1fr);
         grid-gap: 1em;
         justify-items: center;
     }
 
+    /*Exemple des déclarations des images pour le html en backgrounds
+
+    #img1{
+    background-image: url(./images/background1.jpg);
+    }
+    faire une classe .card pour le reste de la 3ème et 4ème ligne avec les 6 images
+    .card{
+    padding:20px;
+    height:40vh;
+    */
 }

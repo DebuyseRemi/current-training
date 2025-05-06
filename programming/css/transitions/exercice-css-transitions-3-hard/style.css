@@ -44,7 +44,7 @@ nav{
     color: var(--couleur-texte);
     justify-content: space-between;
     padding: 1em;
-    padding-left: 5%;
+    padding-left: 1%;
     padding-right:5%;
     border-bottom: solid 2px var(--couleur-bordure);
     background-color:  var(--couleur-fond);
@@ -87,6 +87,7 @@ ul{
 .center{
     display:flex;
     justify-content: center;
+    font-size: xxx-large;
 }
 
 .sous{
@@ -94,8 +95,7 @@ ul{
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
     position: absolute;
-    width:fit-content;
-    z-index: 1000;
+    padding:0;
 }
 
 .deroulant > a::after{
@@ -103,24 +103,30 @@ ul{
     font-size: 12px;
 }
 
-nav > ul li:hover .sous{
+nav > ul li:focus-within .sous{
     display: block;
-    justify-content: column;
+    
 }
 .sous li{
     display: inline-block;
     vertical-align:top;
     text-align: left;
-}
-
-.sous{
-    padding:0;
+    margin: 0.5em;
 }
 .sous a{
     padding: 0;
     border-bottom: none;
+    margin: 0.5em;
 }
 a:hover{
     color: var(--couleur-titre);
     border-bottom:solid 1px var(--couleur-titre);
+}
+
+.titre{
+    color :var(--couleur-titre);
+}
+
+@media screen and (max-width: 992px){
+
 }
