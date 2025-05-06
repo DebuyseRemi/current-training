@@ -18,7 +18,7 @@ ul {
     padding-top: 1rem;
     padding-left: 1em;
   }
-  
+
   /*Penser à utiliser rem plutôt que em*/
   li {
     float: right;
@@ -262,5 +262,27 @@ footer{
     .card{
     padding:20px;
     height:40vh;
+    }
+
+    Ajout de la class overlay,overlay-white et overlay-dark
+
+    .overlay::after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    }
+
+    .overlay-white::after{
+    background: rgba(255,255,255,0.161);
+    }
+
+    .overlay-dark::after{
+    background: rgba(0,0,0,0.161);
+    }
     */
+
+
 }
