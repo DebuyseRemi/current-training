@@ -52,12 +52,9 @@ h1::after{
 
 h1:hover::after{
     transform:scaleX(1);
-}
-
-
-h1:hover::after{
     width: 100%;
 }
+
 
 nav{
     width: 100%;
