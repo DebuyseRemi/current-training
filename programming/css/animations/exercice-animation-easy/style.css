@@ -1,0 +1,66 @@
+:root {
+  --couleur-primaire: #3498db;
+  --couleur-secondaire: #f3f3f3;
+  --duree-animation: 1.5s;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+
+}
+
+body
+{
+    font-family: Poppins;
+    height: 100%;
+}
+
+
+
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--couleur-secondaire);
+  border-top: 5px solid var(--couleur-primaire);
+  border-radius: 50%;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse{
+   animation: pulse var(--duree-animation) ease-in-out infinite;
+}
+
+.loader {
+  animation:
+  rotation var(--duree-animation) linear infinite;
+}
+
+h1{
+     display: flex;
+     justify-content: center;
+    align-items: center;
+}

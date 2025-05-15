@@ -1,0 +1,23 @@
+:root {
+  --couleur-primaire: #781D16;
+  --couleur-secondaire: #f3f3f3;
+  --duree-animation: 1.5s;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+
+}
+
+body
+{
+    font-family: Poppins;
+    height: 100%;
+}
+
+
+h1{
+     display: flex;
+     justify-content: center;
+    align-items: center;
+}
