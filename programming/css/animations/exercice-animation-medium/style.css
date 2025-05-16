@@ -45,20 +45,21 @@ h1{
 h2{
     color:var(--couleur-primaire);
     margin: 1rem;
+    width:fit-content;
 }
 
-h2:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 5;
+
+h2::after {
   content: "";
   display: block;
   height: 2px;
-  left: 0;
-  position: absolute;
+  width: 0px;
+  margin: 0;
   background: var(--couleur-primaire);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+  transition: width 0.3s ease-in-out;
 }
+
+
 
 
 
@@ -112,15 +113,13 @@ opacity: 0.5;
 transform: scale(1.1);
 left: 0;
 top: 0;
-height:17.2rem;
+height:17.4rem;
 padding-bottom: 0.8rem;
 }
 
-.card:hover h2:after{
-    width: 50%; 
-  left: 3%; 
+.card:hover h2::after {
+  width: 100%;
 }
-
 
 button:hover{
     background-position: left bottom;

@@ -1,0 +1,161 @@
+:root {
+  --couleur-primaire: #781D16;
+  --couleur-secondaire: #f3f3f3;
+  --duree-animation: 1.5s;
+}
+
+.poppins-light {
+    font-family: "Roboto", sans-serif;
+
+}
+
+body
+{
+    font-family: Roboto;
+    color: white;
+}
+
+
+#navbar{
+    width:100%;
+    /*position: fixed;Nécessaire pour avoir la barre qui reste affichée pendant le défilement
+    top: 0;/*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
+    display: flex;
+    background-color: rgba(50, 48, 63, 0);
+    color:white;
+    justify-content: center;
+    padding: 0rem;
+    text-transform:uppercase;
+    gap: 2rem;
+}
+
+#navbar a{
+  text-align: center;
+  color:inherit;
+  text-decoration: none;
+}
+
+
+#navbar h3{
+  padding: 1em;
+}
+
+header{
+  background-image:url(./bg_header.jpg);
+  background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+  height: 600px;
+  padding-left: 15%;
+    padding-right:15%;
+}
+
+main{
+  background-color:#606060 ;
+  height: 2133px;
+  padding-left: 15%;
+    padding-right:15%;
+}
+
+footer{
+  height: 495px;
+}
+
+.Adroite{
+    object-fit:cover;
+    display: flex;
+    flex-direction:column;
+    padding: 1em;
+    justify-content:end;
+    text-align: end;
+    width: 507px;
+    margin-left: auto; 
+    margin-right: 0;
+    margin-top: 9rem;
+  
+
+}
+
+.Adroite h1{
+  font-size: xxx-large;
+  font-weight: 400;
+  text-transform:uppercase;
+}
+
+header button{
+  background-color:#CCA57C;
+  border: none;
+  border-radius: 15px;
+  color:white;
+  padding: 0.2em 0.8em;
+  margin-left: auto; 
+  margin-right: 0;
+  display: flex;
+}
+
+#hall{
+  background-color: #272727;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  height: 698px;
+}
+
+#hall h1{
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+  margin-bottom: 5rem;
+}
+
+.couleur{
+  color:#CCA57C;
+  display: inline;
+}
+
+.grid{
+display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    gap: 3px;
+    width: 100%;
+    height:fit-content;
+    gap: 5px;
+}
+
+.texte{
+  font-weight: 300;
+  grid-column: 1;
+  size: fit-content;
+  display: grid;
+  gap: 3rem;
+  justify-content: inherit;
+}
+
+.texte p{
+  size:fit-content;
+}
+
+.imagehall{
+  background-image:url(./london_hall.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: inherit;
+  grid-column: 2;
+}
+
+.grid button{
+  grid-column: 2;
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:#CCA57C;
+  border:none;
+  color:white;
+}
+
+
+#projects{
+  background-color: #CCA57C;
+  
+}
