@@ -39,6 +39,7 @@ h1{
 
 .card img {
   object-fit: cover;
+
 }
 
 h2{
@@ -48,7 +49,7 @@ h2{
 
 h2:after {    
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: 5;
   content: "";
   display: block;
   height: 2px;
@@ -59,10 +60,7 @@ h2:after {
   width: 0;
 }
 
-h2:hover:after{
-    width: 100%; 
-  left: 0%; 
-}
+
 
 p{
     padding: 1rem;
@@ -114,8 +112,14 @@ opacity: 0.5;
 transform: scale(1.1);
 left: 0;
 top: 0;
+height:17.2rem;
+padding-bottom: 0.8rem;
 }
 
+.card:hover h2:after{
+    width: 50%; 
+  left: 3%; 
+}
 
 
 button:hover{
