@@ -61,7 +61,12 @@ main{
 
 footer{
   background-image: url(./bg_footer.jpg);
-  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: -moz-available;
+  background-size: cover;
+  height: 496px;
 }
 
 .Adroite{
@@ -113,6 +118,13 @@ header button{
 .couleur{
   color:#CCA57C;
   display: inline;
+}
+
+.couleurMarge{
+  color:#CCA57C;
+  display: inline;
+  border-left: solid;
+  padding-left: 2rem;
 }
 
 .grid{
@@ -268,29 +280,149 @@ background-image:url(./logo12.png);
   margin-bottom: 5rem;
 }
 
+
+
 .containerV2{
     display: flex;
-    justify-content: center;
-    width:30%;
-    margin-left:35%;
+    width:100%;
     margin-top:10%;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.89);
     padding-left: 2%;  
+    grid-column: 3;
+    height: 313px;
+    padding: 1rem;
+    gap: 1rem;
+  display: grid;
+}
+  
+.containerV3{
+    width:100%;
+    margin-top:10%;
+    border-radius: 3px;
+    background-color:#cca57cc4;
+    padding: 2rem;  
+    background-image: url(visuelgauche.jpg);
+    grid-column: 2;
+    max-height: 313px;
   }
 
   .logoPoly{
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     position: relative;
     background-size: inherit;
     background-image: url(poly-logo.png);
+    height: 10rem;
   }
 
   .logo3D{
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     position: relative;
     background-size: inherit;
     background-image:url(3d-logo.png);
+    height: 10rem;
   }
+
+  #colonne1{
+  grid-column: 1;
+  display: grid;
+  height: 517px;
+  }
+
+
+  #colonne1 button{
+    background-color: #606060;
+    color: #CCA57C;
+    height: fit-content;
+    border: none;
+    border-left: solid 2px #CCA57C ;
+    max-width: 50%;
+  }
+
+  #colonne2{
+  grid-column: 2;
+  display: grid;
+  height: 517px;
+  }
+
+    #colonne2 button{
+    background-color:#CCA57C;
+    color:#606060;
+    height: fit-content;
+    border: none;
+    border-left: solid 2px #CCA57C ;
+    max-width: 50%;
+  }
+
+  #colonne3{
+  grid-column: 3;
+  justify-content: end;
+  display: grid;
+  height: 517px;
+  text-align: end;
+  }
+
+  .monde{
+    background-image: url(map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    height: 15rem;
+  }
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 375px 375px 1fr;
+    gap: 3px;
+    width: 100%;
+    height:fit-content;
+    gap: 5px;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color:#CCA57C;
+  height: 1px;
+  width: -moz-available;
+} 
+
+#name,#message,#email{
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: white;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity:none;
+  color: white;
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  opacity: none;
+  color:white;
+}
+
+
+.containerV2 button{
+  text-transform: uppercase;
+  color: white;
+  background-color: #CCA57C;
+  border:none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding:2px;
+}

@@ -32,7 +32,7 @@
     </header>
     <main>
         <div id="hall">
-            <h1>ABOUT <div class="couleur"> GO.HALL</div></h1>
+            <h1>ABOUT <spans class="couleur">&nbsp; GO.HALL</span></h1>
             <p>We turne ideas into</p>
             <p>works of art.</p>
 
@@ -40,7 +40,7 @@
                 <div class="texte">
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    <p><div class="couleur">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    <p><div class="couleurMarge">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div> </p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -52,7 +52,7 @@
 
         </div>
         <div id="projects">
-            <h1>ABOUT <div class="couleurNoir"> PROJECTS</div></h1>
+            <h1>ABOUT <span class="couleurNoir">&nbsp; PROJECTS</span></h1>
             <div class="grid2">
                 <div class="imageParis"><h2>CONCERT HALL IN <div class="couleur">PARIS</div></h2></div>
                 <button class="button">JANVIER 2017</button>
@@ -67,35 +67,62 @@
         </div>
 
         <div id="services">
-            <h1>ABOUT <div class="couleur"> SERVICES</div></h1>
+            <h1>ABOUT <span class="couleur">&nbsp;SERVICES</span></h1>
             <div class="grid2">
+                <div id="colonne1">
+                    <div class="logoPoly"></div>
+                    <h4>DEVELOPMENT</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur. Posuere leo ultricies senectus quam scelerisque consectetur. Sociis 
+                        neque pellentesque egestas porta in ultrices vel tellus at. Sagittis scelerisque felis nunc et. Amet auctor
+                         bibendum viverra nunc integer sit.</p>
+                <button>MORE</button>
+                </div>
+                <div id="colonne2">
+                    <div class="logo3D"></div>
+                    <h4>PLAN WORKS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur. Posuere leo ultricies senectus quam scelerisque
+                     consectetur. Sociis neque pellentesque egestas porta in ultrices vel tellus at. </p>
+                <button>MORE</button>
+                </div>
+                <div id="colonne3">
+                    <hr>
+                    <div class="monde"></div>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur. pellentesque egestas porta in ultrices vel tellus at. Sagittis scelerisque felis nunc Posuere leo ultricies
+                     senectus quam scelerisque consectetur. Sociis neque pellentesque egestas porta in ultrices vel tellus at. Sagittis scelerisque felis nunc</p>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="containerV2">
-            <form action="/submit-form" method="post">
-                <h2>Contactez-nous</h2>
-                <div>
-                <label for="name">Nom *</label>
-                <input type="text" id="name" name="name" required>
-                </div>
-            
-                <div>
-                <label for="email">Email *</label>
-                <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-                </div>
-            
-                <div>
-                <button type="submit">Envoyer</button>
-                </div>
-            </form>
-        </div>  
+        <div class="grid3">
+            <div class="containerV3">
+                <H1>REQUEST</H1>
+                <H1>A CALL BACK</H1>
+            </div>
+            <div class="containerV2">
+                <form action="/submit-form" method="post">
+                    <div>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" required placeholder="Nom *">
+                    </div>
+                
+                    <div>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail *">
+                    </div>
+                    <div>
+                    <label for="message"></label>
+                    <textarea id="message" name="message" rows="6" cols="50" required placeholder="Message *"></textarea>
+                    </div>
+                
+                    <div>
+                    <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
