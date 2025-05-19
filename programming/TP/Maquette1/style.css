@@ -13,6 +13,7 @@ body
 {
     font-family: Roboto;
     color: white;
+    height: auto;
 }
 
 
@@ -53,13 +54,14 @@ background-size: cover;
 
 main{
   background-color:#606060 ;
-  height: 2133px;
+  height: auto;
   padding-left: 15%;
     padding-right:15%;
 }
 
 footer{
-  height: 495px;
+  background-image: url(./bg_footer.jpg);
+  height:auto;
 }
 
 .Adroite{
@@ -96,8 +98,8 @@ header button{
 
 #hall{
   background-color: #272727;
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   height: 698px;
 }
 
@@ -127,7 +129,7 @@ display: grid;
   grid-column: 1;
   size: fit-content;
   display: grid;
-  gap: 3rem;
+  gap: 1rem;
   justify-content: inherit;
 }
 
@@ -142,6 +144,8 @@ display: grid;
   position: relative;
   background-size: inherit;
   grid-column: 2;
+  width:100%;
+  height: auto;
 }
 
 .grid button{
@@ -152,10 +156,141 @@ display: grid;
   background-color:#CCA57C;
   border:none;
   color:white;
+  position:absolute;
+  right:22%;
+  top:192%;
 }
 
+.grid2{
+display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    gap: 3px;
+    width: 100%;
+    height:fit-content;
+    gap: 5px;
+}
 
 #projects{
-  background-color: #CCA57C;
-  
+  background-color:#CCA57C;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 668px;
 }
+
+#projects h1{
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+  margin-bottom: 5rem;
+}
+
+.couleurNoir{
+  color:#272727;
+  display: inline;
+}
+
+.imageParis{
+  background-image:url(./paris.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: inherit;
+  grid-column: 1;
+  width:100%;
+  height: auto;
+}
+
+.imageLondon{
+  background-image:url(./london.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: inherit;
+  grid-column: 2;
+  width:100%;
+  height: auto;
+}
+
+.container{
+  grid-column: 3;
+  height:400px;
+}
+
+.imageLogo{
+background-image:url(./logo12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: inherit;
+  width:100%;
+  height: 47%;
+  left:-29%
+}
+
+
+.grid2 .button{
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:#272727;
+  border:none;
+  color:white;
+  position:absolute;
+  right:70%;
+  top:318%;
+}
+
+.grid2 .btn{
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:#272727;
+  border:none;
+  color:white;
+  position:absolute;
+  right:53%;
+  top:318%;
+}
+
+
+
+#services{
+  background-color: #272727;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 779px;
+}
+
+#services h1{
+  display: flex;
+  justify-content: center;
+  padding-top:1rem;
+  margin-bottom: 5rem;
+}
+
+.containerV2{
+    display: flex;
+    justify-content: center;
+    width:30%;
+    margin-left:35%;
+    margin-top:10%;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.89);
+    padding-left: 2%;  
+  }
+
+  .logoPoly{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    background-image: url(poly-logo.png);
+  }
+
+  .logo3D{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    background-image:url(3d-logo.png);
+  }
