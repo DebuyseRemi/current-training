@@ -52,6 +52,17 @@ background-size: cover;
     padding-right:15%;
 }
 
+.imgLogo{
+  background-image: url(./logo_header.png);
+  min-width: 26%;
+}
+
+.imgLogo:hover{
+  background-image: url(./logo_hover.png);
+  min-width: 26%;
+}
+
+
 main{
   background-color:#606060 ;
   height: auto;
@@ -170,7 +181,7 @@ display: grid;
   color:white;
   position:absolute;
   right:22%;
-  top:192%;
+  top:142%;
 }
 
 .grid2{
@@ -249,7 +260,7 @@ background-image:url(./logo12.png);
   color:white;
   position:absolute;
   right:70%;
-  top:318%;
+  top:236%;
 }
 
 .grid2 .btn{
@@ -261,7 +272,7 @@ background-image:url(./logo12.png);
   color:white;
   position:absolute;
   right:53%;
-  top:318%;
+  top:236%;
 }
 
 
@@ -339,6 +350,7 @@ background-image:url(./logo12.png);
     border: none;
     border-left: solid 2px #CCA57C ;
     max-width: 50%;
+    text-align: end;
   }
 
   #colonne2{
@@ -348,12 +360,13 @@ background-image:url(./logo12.png);
   }
 
     #colonne2 button{
-    background-color:#CCA57C;
-    color:#606060;
+    background-color: #606060;
+    color: #CCA57C;
     height: fit-content;
     border: none;
     border-left: solid 2px #CCA57C ;
     max-width: 50%;
+    text-align: end;
   }
 
   #colonne3{
@@ -402,6 +415,7 @@ hr {
     border-color: white;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, 0.89);
+    color:white;
 }
 
 input::placeholder {
@@ -425,4 +439,10 @@ textarea::placeholder {
   border-radius: 5px;
   margin-top: 1rem;
   padding:2px;
+}
+
+.aligne{
+  position: absolute;
+  top:3rem;
+  left:3.5rem;
 }
