@@ -1,7 +1,8 @@
 :root {
-  --couleur-primaire: #781D16;
-  --couleur-secondaire: #f3f3f3;
-  --duree-animation: 1.5s;
+  --couleur-primaire:#CCA57C;
+  --couleur-secondaire:#272727;
+  --couleur-tertiaire: #606060;
+  --couleur-clair:white;
 }
 
 .poppins-light {
@@ -12,18 +13,18 @@
 body
 {
     font-family: Roboto;
-    color: white;
+    color: var(--couleur-clair);
     height: auto;
 }
 
 
 #navbar{
-    width:100%;
+    max-width:-moz-available; /*seulement pour mozilla */
+    max-width: webkit-fill-available; /* pour navigateur autre que mozilla*/
     /*position: fixed;Nécessaire pour avoir la barre qui reste affichée pendant le défilement
     top: 0;/*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
     display: flex;
-    background-color: rgba(50, 48, 63, 0);
-    color:white;
+    color:var(--couleur-clair);
     justify-content: center;
     padding: 0rem;
     text-transform:uppercase;
@@ -54,17 +55,17 @@ background-size: cover;
 
 .imgLogo{
   background-image: url(./logo_header.png);
-  min-width: 26%;
+  min-width: 18rem;
 }
 
 .imgLogo:hover{
   background-image: url(./logo_hover.png);
-  min-width: 26%;
+  min-width: 18rem;
 }
 
 
 main{
-  background-color:#606060 ;
+  background-color:var(--couleur-tertiaire) ;
   height: auto;
   padding-left: 15%;
     padding-right:15%;
@@ -75,19 +76,20 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  width: -moz-available;
+  min-width: -moz-available;
+  min-width: webkit-fill-available;
   background-size: cover;
   height: 496px;
 }
 
 .Adroite{
-    object-fit:cover;
     display: flex;
     flex-direction:column;
     padding: 1em;
+    padding-right: 0;
     justify-content:end;
     text-align: end;
-    width: 507px;
+    max-width: 32rem;
     margin-left: auto; 
     margin-right: 0;
     margin-top: 9rem;
@@ -102,10 +104,10 @@ footer{
 }
 
 header button{
-  background-color:#CCA57C;
+  background-color:var(--couleur-primaire);
   border: none;
   border-radius: 15px;
-  color:white;
+  color:var(--couleur-clair);
   padding: 0.2em 0.8em;
   margin-left: auto; 
   margin-right: 0;
@@ -113,7 +115,7 @@ header button{
 }
 
 #hall{
-  background-color: #272727;
+  background-color: var(--couleur-secondaire);
   padding-left: 3rem;
   padding-right: 3rem;
   height: 698px;
@@ -122,17 +124,17 @@ header button{
 #hall h1{
   display: flex;
   justify-content: center;
-  padding-top:1rem;
+  padding-top:5rem;
   margin-bottom: 5rem;
 }
 
 .couleur{
-  color:#CCA57C;
+  color:var(--couleur-primaire);
   display: inline;
 }
 
 .couleurMarge{
-  color:#CCA57C;
+  color:var(--couleur-primaire);
   display: inline;
   border-left: solid;
   padding-left: 2rem;
@@ -141,10 +143,10 @@ header button{
 .grid{
 display: grid;
     grid-template-columns: 3.5fr 1fr;
-    gap: 3px;
     width: 100%;
     height:fit-content;
     gap: 5px;
+    margin-top: 1rem;
 }
 
 .texte{
@@ -167,34 +169,32 @@ display: grid;
   position: relative;
   background-size: inherit;
   grid-column: 2;
-  width:100%;
+  max-width:15rem;
   height: auto;
 }
 
 .grid button{
-  grid-column: 2;
   display: flex;
   width: fit-content;
   padding: 0.2em 0.8em;
-  background-color:#CCA57C;
+  background-color:var(--couleur-primaire);
   border:none;
-  color:white;
+  color:var(--couleur-clair);
   position:absolute;
-  right:22%;
-  top:142%;
+  right:28%;
+  top:90%;
 }
 
 .grid2{
 display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
-    gap: 3px;
-    width: 100%;
+    max-width: 100%;
     height:fit-content;
     gap: 5px;
 }
 
 #projects{
-  background-color:#CCA57C;
+  background-color:var(--couleur-primaire);
   padding-left: 3rem;
   padding-right: 3rem;
   height: 668px;
@@ -203,12 +203,12 @@ display: grid;
 #projects h1{
   display: flex;
   justify-content: center;
-  padding-top:1rem;
+  padding-top:5rem;
   margin-bottom: 5rem;
 }
 
 .couleurNoir{
-  color:#272727;
+  color:var(--couleur-secondaire);
   display: inline;
 }
 
@@ -219,7 +219,7 @@ display: grid;
   position: relative;
   background-size: inherit;
   grid-column: 1;
-  width:100%;
+  max-width:18rem;
   height: auto;
 }
 
@@ -230,24 +230,25 @@ display: grid;
   position: relative;
   background-size: inherit;
   grid-column: 2;
-  width:100%;
+  max-width:18rem;
   height: auto;
 }
 
 .container{
+  display: flex;
   grid-column: 3;
   height:400px;
+  flex-direction: column;
+  gap:16px;
 }
 
 .imageLogo{
-background-image:url(./logo12.png);
-  background-position: center;
+  background-image:url(./logo12.png);
   background-repeat: no-repeat;
   position: relative;
-  background-size: inherit;
   width:100%;
   height: 47%;
-  left:-29%
+  margin-top:1.5rem;
 }
 
 
@@ -255,30 +256,30 @@ background-image:url(./logo12.png);
   display: flex;
   width: fit-content;
   padding: 0.2em 0.8em;
-  background-color:#272727;
+  background-color:var(--couleur-secondaire);
   border:none;
-  color:white;
+  color:var(--couleur-clair);
   position:absolute;
-  right:70%;
-  top:236%;
+  right:33%;
+  top:77%;
 }
 
 .grid2 .btn{
   display: flex;
   width: fit-content;
   padding: 0.2em 0.8em;
-  background-color:#272727;
+  background-color:var(--couleur-secondaire);
   border:none;
-  color:white;
+  color:var(--couleur-clair);
   position:absolute;
-  right:53%;
-  top:236%;
+  right:40%;
+  top:77%;
 }
 
 
 
 #services{
-  background-color: #272727;
+  background-color: var(--couleur-secondaire);
   padding-left: 3rem;
   padding-right: 3rem;
   height: 779px;
@@ -287,7 +288,7 @@ background-image:url(./logo12.png);
 #services h1{
   display: flex;
   justify-content: center;
-  padding-top:1rem;
+  padding-top:5rem;
   margin-bottom: 5rem;
 }
 
@@ -301,7 +302,8 @@ background-image:url(./logo12.png);
     background-color: rgba(0, 0, 0, 0.89);
     padding-left: 2%;  
     grid-column: 3;
-    height: 313px;
+    grid-row:2;
+    max-height: 313px;
     padding: 1rem;
     gap: 1rem;
   display: grid;
@@ -311,10 +313,11 @@ background-image:url(./logo12.png);
     width:100%;
     margin-top:10%;
     border-radius: 3px;
-    background-color:#cca57cc4;
+    background-color:var(--couleur-primaire);
     padding: 2rem;  
     background-image: url(visuelgauche.jpg);
     grid-column: 2;
+    grid-row:2;
     max-height: 313px;
   }
 
@@ -338,35 +341,42 @@ background-image:url(./logo12.png);
 
   #colonne1{
   grid-column: 1;
-  display: grid;
+  display: flex;
   height: 517px;
+  flex-direction:column;
+  gap:39px;
   }
 
 
   #colonne1 button{
-    background-color: #606060;
-    color: #CCA57C;
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-primaire);
     height: fit-content;
     border: none;
-    border-left: solid 2px #CCA57C ;
+    border-left: solid 2px var(--couleur-primaire) ;
     max-width: 50%;
     text-align: end;
+    padding-right: 1rem;
   }
 
   #colonne2{
   grid-column: 2;
-  display: grid;
+  display: flex;
   height: 517px;
+  flex-direction:column;
+  gap:62px;
+
   }
 
     #colonne2 button{
-    background-color: #606060;
-    color: #CCA57C;
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-primaire);
     height: fit-content;
     border: none;
-    border-left: solid 2px #CCA57C ;
+    border-left: solid 2px var(--couleur-primaire) ;
     max-width: 50%;
     text-align: end;
+    padding-right: 1rem;
   }
 
   #colonne3{
@@ -383,16 +393,15 @@ background-image:url(./logo12.png);
     background-repeat: no-repeat;
     position: relative;
     background-size: inherit;
-    height: 15rem;
+    height: 10rem;
   }
 
 .grid3{
     display: grid;
     grid-template-columns: 1fr 375px 375px 1fr;
-    gap: 3px;
     width: 100%;
+    grid-template-rows: 91px 313px 91px;
     height:fit-content;
-    gap: 5px;
 }
 
 hr { 
@@ -403,42 +412,43 @@ hr {
   margin-right: auto;
   border-style: inset;
   border-width: 1px;
-  color:#CCA57C;
+  color:var(--couleur-primaire);
   height: 1px;
-  width: -moz-available;
+  min-width: -moz-available;
+  min-width: webkit-fill-available;
 } 
 
 #name,#message,#email{
     width: 95%;
     border: none;
     border-bottom: 1px solid;
-    border-color: white;
+    border-color: var(--couleur-clair);
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.89);
-    color:white;
+    background-color: rgba(0, 0, 0, 0);
+    color:var(--couleur-clair);
+    margin-bottom: 1rem;
 }
 
 input::placeholder {
   font-weight: bold;
   opacity:none;
-  color: white;
+  color: var(--couleur-clair);
 }
 
 textarea::placeholder {
   font-weight: bold;
   opacity: none;
-  color:white;
+  color:var(--couleur-clair);
 }
 
 
 .containerV2 button{
   text-transform: uppercase;
-  color: white;
-  background-color: #CCA57C;
+  color: var(--couleur-clair);
+  background-color: var(--couleur-primaire);
   border:none;
   border-radius: 5px;
-  margin-top: 1rem;
-  padding:2px;
+  padding: 4px 10px;
 }
 
 .aligne{
