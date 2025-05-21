@@ -90,9 +90,9 @@ footer{
     justify-content:end;
     text-align: end;
     max-width: 32rem;
-    margin-left: auto; 
-    margin-right: 0;
-    margin-top: 9rem;
+    position:absolute;
+    bottom: 15%;
+    right: 20%;
   
 
 }
@@ -186,11 +186,11 @@ display: grid;
 }
 
 .grid2{
-display: grid;
+  display: grid;
     grid-template-columns: 1fr 1fr 1.5fr;
     max-width: 100%;
     height:fit-content;
-    gap: 5px;
+    gap: 40px;
 }
 
 #projects{
@@ -217,7 +217,7 @@ display: grid;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-size: inherit;
+  background-size: cover;
   grid-column: 1;
   max-width:18rem;
   height: auto;
@@ -228,7 +228,7 @@ display: grid;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  background-size: inherit;
+  background-size: cover;
   grid-column: 2;
   max-width:18rem;
   height: auto;
@@ -239,7 +239,8 @@ display: grid;
   grid-column: 3;
   height:400px;
   flex-direction: column;
-  gap:16px;
+  margin-right:59px;
+  gap:7px;
 }
 
 .imageLogo{
@@ -385,6 +386,7 @@ display: grid;
   display: grid;
   height: 517px;
   text-align: end;
+  padding-left:54px;
   }
 
   .monde{
@@ -455,4 +457,9 @@ textarea::placeholder {
   position: absolute;
   top:3rem;
   left:3.5rem;
+}
+
+.containerV3 h1{
+  font-size: 24px;
+  font-weight: 600;
 }

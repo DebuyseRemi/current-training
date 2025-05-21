@@ -1,0 +1,63 @@
+:root{
+  --couleur-primaire:#FDC98A;
+  --couleur-secondaire:#C2C57E;
+  --couleur-tertiaire: #606060;
+  --couleur-clair:white;
+}
+
+
+
+.poppins-light {
+    font-family: "Roboto", sans-serif;
+
+}
+
+body
+{
+    font-family: Roboto;
+}
+
+header{
+    min-height: 441px;
+    background-image: url(./bg_header.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: -moz-available;
+    min-width: webkit-fill-available;
+}
+
+.logo_header{
+    max-height: 287px;
+    padding:64px;
+}
+
+.logo{
+    max-width: 451px;
+    max-height: 200px;
+    position: absolute;
+    background-position: center;
+}
+
+.navbar_header{
+    justify-content:space-between;
+    padding:16px 32px;
+    color:var(--couleur-tertiaire);
+    background-color: var(--couleur-primaire);
+}
+
+main{
+    background-color: var(--couleur-tertiaire);
+    min-width: -moz-available;
+    min-width: webkit-fill-available;
+}
+
+  @media screen and (min-width: 1024px) and (max-width: 1728px) {
+
+  }
+
+  @media screen and (min-width: 1729px) {
+
+  }
+
