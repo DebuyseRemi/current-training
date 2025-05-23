@@ -17,27 +17,25 @@ body
     font-family: Roboto;
 }
 
-header{
+.header{
     min-height: 441px;
     background-image: url(./bg_header.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    position: absolute;
-    background-size: cover;
-    min-width: -moz-available;
-    min-width: webkit-fill-available;
-}
-
-.logo_header{
-    max-height: 287px;
-    padding:64px;
-}
-
-.logo{
-    max-width: 451px;
-    max-height: 200px;
-    position: absolute;
     background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto;
+}
+
+
+.logo{/* utile pour centrer le logo au centre de l'image*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto; 
 }
 
 .navbar_header{
@@ -45,15 +43,284 @@ header{
     padding:16px 32px;
     color:var(--couleur-tertiaire);
     background-color: var(--couleur-primaire);
+    display: grid;
+    justify-content:center;
 }
+
+.navbar_header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-left: 1em;
+    display: flex;
+    gap:15px;
+  }
 
 main{
     background-color: var(--couleur-tertiaire);
     min-width: -moz-available;
     min-width: webkit-fill-available;
+    padding: 4rem;
+    position: relative;
+}
+
+#soupe{
+    background-image: url(Soupe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    background-size: contain;
+    
+}
+
+#salade{
+    background-image: url(Salade.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    background-size: contain;
+}
+
+#dessert{
+    background-image: url(Dessert.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    background-size: contain;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    color: var(--couleur-primaire);
+    text-transform:uppercase;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+.grid h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    margin: auto; 
+    transform: translate(-50%, -50%);
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    min-width: 236px;
+    color: var(--couleur-primaire);
+    text-transform:uppercase;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    text-align: center;
+}
+
+.grid{
+    display:grid;
+    gap:10px;
+}
+
+.card{
+    max-width: 304px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--couleur-secondaire);
+    }
+
+.card h3{
+        min-width: 236px;
+        text-transform:uppercase;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--couleur-tertiaire);
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin:15px
+}
+
+.toge{
+    position: relative;
+    top: -2rem;
+    margin: auto;
+}
+
+.recents{
+    gap:15px;
+    display: grid;
+}
+
+.img{
+    background-size: cover;
+    height: 180px;
+    min-width: 100%;
+    position: relative;
+}
+
+.margin{
+    margin:0 10%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 240px;
+}
+
+.gris{
+    color:var(--couleur-tertiaire);
+    text-transform: uppercase;
+}
+
+.profileCard{
+    max-width: 304px;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+     background-image: url(./bg-profilecard.jpg);
+    background-color:#f7b564cc;
+     background-blend-mode: soft-light;
+    display: grid;
+    justify-items: center;
+    gap:25px;
+    padding:1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1.5rem); serait à utiliser mais en visant seulement l'image background et non pas tout le profil*/
+    }
+
+.bar_right{
+    margin:3rem 0rem;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rs{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.shape1 {
+  clip-path: circle(49%);/* Pour bien découper l'image carré en un cercle*/
+}
+
+.categories{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    margin-top: 0.5rem;
+}
+
+.featureCardBiere{
+    min-height:350px;
+    max-width: 304px;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-image: url(./Bieres.jpg);
+    color:var(--couleur-primaire);
+    text-transform:uppercase;
+    padding: 0.5rem;
+    background-repeat:no-repeat;
+}
+
+.rectangle{
+  border:solid 1px var(--couleur-primaire);
+  border: solid 1px var(--couleur-primaire);
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  gap: 5px;
+  padding-top: 12.5rem;
+}
+
+.featureCardCafe{
+    min-height:350px;
+    max-width: 304px;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-image: url(./Cafe.jpg);
+    color:var(--couleur-primaire);
+    text-transform:uppercase;
+    padding: 0.5rem;
+    background-repeat:no-repeat;
+}
+
+.bar_right button{
+  border: none;
+  outline: 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--couleur-tertiaire);
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin:15px
+}
+
+.galleriePhoto{
+    display: grid;
+    gap:1rem;
+}
+
+footer{
+    background-image: url(./footer.jpg);
+    background-color:#000000c2;
+    background-blend-mode: soft-light;
+    display: grid;
+    justify-items: center;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    height: 396px;
+    padding: 3rem;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.navbar_footer{
+    justify-content:space-between;
+    padding:16px 32px;
+    display: grid;
+    justify-content:center;
+    list-style-type: none;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap:15px;
+    text-transform:uppercase;
 }
 
   @media screen and (min-width: 1024px) and (max-width: 1728px) {
+    .header{
+    min-height: 441px;
+    background-image: url(./bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
 
   }
 

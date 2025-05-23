@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <div class="logo_header">
+        <div class="header">
             <img class="logo" src="logo_header.png" alt="texte_header">
         </div>
         <div class="navbar_header">
@@ -27,13 +27,119 @@
                 <li>Boisson</li>
             </ul>
             <div class="searchbar">
-                <input type="search" class="search" placeholder="Rechercher">
                 <button><span class="material-symbols-outlined">search</span></button>
+                <input type="search" class="search" placeholder="Rechercher">
             </div> 
         </div>
     </header>
     <main>
+        <div class="grid">
+            <div id="soupe"><h3>Soupe</h3></div>
+            <div id="salade"><h3>Salade</h3></div>
+            <div id="dessert"><h3>Dessert</h3></div>
+        </div>
 
+        <div class="recents">
+            <h2>Articles récents</h2>
+            <div class="card">
+                <img src="./Tacos.jpg" alt="Tacos" class="img">
+                <img src="toque.png" alt="Toge" class="toge">
+                <p class="gris">Recette</p>
+                <h3 class="margin">chicken tacos</h3>
+                <p class="gris">Par john doe - 17 MARS 2025</p>
+                <p class="margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lobortis qua</p>
+                <button>Lire plus</button>
+            </div>
+
+            <div class="card">
+                <img src="./Cote_de_boeuf.jpg" alt="Tacos" class="img">
+                <img src="toque.png" alt="Toge" class="toge">
+                <p class="gris">Recette</p>
+                <h3 class="margin">côte de boeuf</h3>
+                <p class="gris">Par john doe - 17 MARS 2025</p>
+                <p class="margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lobortis quam,</p>
+                <button>Lire plus</button>
+            </div>
+
+            <div class="card">
+                <img src="./Cake.jpg" alt="Tacos" class="img">
+                <img src="toque.png" alt="Toge" class="toge">
+                <p class="gris">Recette</p>
+                <h3 class="margin">carrot cake</h3>
+                <p class="gris">Par john doe - 17 MARS 2025</p>
+                <p class="margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lobortis quam,</p>
+                <button>Lire plus</button>
+            </div>
+
+            <div class="card">
+                <img src="./Cookies.jpg" alt="Tacos" class="img">
+                <img src="toque.png" alt="Toge" class="toge">
+                <p class="gris">Recette</p>
+                <h3 class="margin">Cookie sésame</h3>
+                <p class="gris">Par john doe - 17 MARS 2025</p>
+                <p class="margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales lobortis qua</p>
+                <button>Lire plus</button>
+            </div>
+        </div>
+
+        <div class="bar_right">
+            <div class="profileCard">
+                <img src="./me-avatar.jpg" alt="avatar" class="shape1">
+                <h3>A MON SUJET</h3>
+                <p>Depuis 2005, je partage mes recettes quotidienne, plus gourmandes les unes que les autres</p>
+                <div class="social"> <img src="x.png" alt="x" class="rs"><img src="fb.png" alt="fb" class="rs">
+                <img src="pinterest.png" alt="pinterest" class="rs"><img src="rss.png" alt="rss" class="rs"></div>
+            </div>
+
+            <h2>Catégories</h2>
+            <div class="categories">
+                <p>Alcool</p><p>→</p>
+            </div>
+            <div class="categories">
+                    <p>Jus de fruit </p><p>→</p>
+            </div>
+            <div class="categories">
+                <p>Vive le bio </p><p>→</p>
+            </div>
+
+            <div class="featureCardBiere">
+                <div class="rectangle">
+                    <p>Mes bières</p>
+                    <h3>préférées</h3>
+                    <button>Lire plus</button>
+                </div>
+            </div>
+
+            <div class="featureCardCafe">
+                <div class="rectangle">
+                    <p>L'art</p>
+                    <h3>du café</h3>
+                    <button>Lire plus</button>
+                </div>
+            </div>
+        </div>
+        <div class="galleriePhoto">
+            <h2>Ma gallerie photos</h2>
+            <img src="Hamburger.jpg">
+            <img src="Pexels.jpg">
+            <img src="gateau.jpg">
+            <img src="Pancakes.jpg">
+            <img src="oeufs.jpg">
+            <img src="Salmon-dish.jpg">
+        </div>
     </main>
+    <footer>
+        <img src="logo_footer.png" alt="logo footer">
+         <div class="navbar_footer">
+            <ul>
+                <li>Brunch</li>
+                <li>Sucré</li>
+                <li>Salé</li>
+                <li>Bio</li>
+                <li>Boisson</li>
+            </ul>
+        <p>La gastronomie est l'art d'utiliser la nourriture pour créer le bonheur.</p>
+        <p> n'y a rien qui permette de condamner un gastronome, tant que qu'il ne va pas jusqu'à l'indigestion</p>
+    </footer>
 </body>
 </html>
