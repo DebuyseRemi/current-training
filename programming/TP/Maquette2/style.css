@@ -143,6 +143,11 @@ h2{
 .recents{
     gap:15px;
     display: grid;
+    justify-content: center;
+}
+
+.recents h2{
+    width: 300px;
 }
 
 .img{
@@ -292,8 +297,6 @@ footer{
   background-position: center;
 }
 
-
-
 .navbar_footer{
     justify-content:space-between;
     padding:16px 32px;
@@ -367,7 +370,9 @@ footer ul{
     grid-column: 1;
     }
 
-
+.recents h2{
+    width: auto;
+}
     #card1{
     grid-column: 1/span 2;
     grid-row: 1;
@@ -402,8 +407,6 @@ footer ul{
     max-width: 240px;
     display: block;
     }
-
-
     
     .galleriePhoto{
         display: grid;
@@ -485,6 +488,9 @@ footer ul{
     grid-column: 1;
     }
 
+.recents h2{
+    width: auto;
+}
 
     #card1{
     grid-column: 1/span 2;
