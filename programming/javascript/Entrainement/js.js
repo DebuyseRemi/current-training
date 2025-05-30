@@ -120,6 +120,20 @@ function devinette(saisie){
     console.log("Bravo");
 }
 
+
+function devinetteV2(){
+let numbers=1;
+while(numbers!=9)
+{
+    numbers++;
+    console.log("Ce n'est pas bon")
+}
+return numbers;
+}
+
+console.log("Bravo c'est bien ",devinetteV2());
+
+
 let data = {
     "id": "0001",
     "type": "donut",
