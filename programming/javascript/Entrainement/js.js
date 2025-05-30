@@ -191,3 +191,82 @@ function nombre(mois){
 
 console.log( "Il y a autant de jours dans ce mois :", nombre(0));
 
+
+
+function sumOfEvenNumbers(tab)
+{
+    let total=0;
+    for(i=0;i<tab.length;i++)
+    {
+        if(tab[i]%2==0){
+            total=total+tab[i];
+        }
+    }
+    return total;
+
+}
+
+const numbers0 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(sumOfEvenNumbers(numbers0)); // Résultat attendu : 30 (2 + 4 + 6 + 8 + 10)
+
+
+function mergeArrays(tab,tab2){
+    let tabTot=[];
+     for(i=0;i<tab.length;i++)
+    {
+        tabTot[i]=tab[i];
+    }
+    for(i=0;i+tab.length<tab.length+tab2.length;i++)
+    {
+        tabTot[i+tab.length]=tab2[i];
+    }
+    return tabTot;
+}
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+console.log(mergeArrays(arr1, arr2)); // Résultat attendu : [1, 2, 3, 4, 5, 6]
+
+
+function removeDuplicates(tab){
+    let newTab = [...new Set(tab)];
+    return newTab;
+}
+
+const fruits = ['Apple', 'Banana', 'Apple', 'Orange', 'Banana', 'Apple'];
+console.log(removeDuplicates(fruits)); // Résultat attendu : ['Apple', 'Banana', 'Orange']
+
+
+function containsElement(tab, e){
+    for(i=0;i<tab.length;i++)
+    {
+        if(tab[i]==e)
+        {
+            return true
+        }
+    }
+    return false
+}
+
+
+const numbers = [1, 2, 3, 4, 5];
+console.log(containsElement(numbers, 3)); // Résultat attendu : true
+console.log(containsElement(numbers, 6)); // Résultat attendu : false
+
+
+function countOccurrences(tab,e){
+    let o=0;
+    for(i=0;i<tab.length;i++)
+    {
+        if(tab[i]==e)
+        {
+            o++;
+        }
+    }
+    return o;
+}
+
+const numbers2 = [1, 2, 2, 3, 4, 2, 5, 2];
+console.log(countOccurrences(numbers2, 2)); // Résultat attendu : 4
+
+
