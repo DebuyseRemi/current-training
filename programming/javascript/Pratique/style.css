@@ -1,0 +1,23 @@
+body {
+  background-color: lightgray;
+  text-align: center;
+}
+
+#morpion{
+  background-color: gray;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#morpion div {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#morpion .case{
+    width: 50px;
+    height: 50px;
+}
+
+/* Faire des tableaux dans les cases où la première case est si disponible ou pas, la seconde le symbole si disponible

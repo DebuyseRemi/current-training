@@ -1,0 +1,546 @@
+:root{
+  --couleur-primaire:#FDC98A;
+  --couleur-secondaire:#C2C57E;
+  --couleur-tertiaire: #606060;
+  --couleur-clair:white;
+}
+
+
+
+.poppins-light {
+    font-family: "Roboto", sans-serif;
+
+}
+
+body
+{
+    font-family: Roboto;
+}
+
+.header{
+    min-height: 441px;
+    background-image: url(./bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: auto;
+}
+
+
+.logo{/* utile pour centrer le logo au centre de l'image*/
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: auto; 
+}
+
+.navbar_header{
+    justify-content:space-between;
+    padding:16px 32px;
+    color:var(--couleur-tertiaire);
+    background-color: var(--couleur-primaire);
+    display: grid;
+    justify-content:center;
+}
+
+.navbar_header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-left: 1em;
+    display: flex;
+    gap:15px;
+  }
+
+main{
+    background-color: var(--couleur-tertiaire);
+    min-width: -moz-available;
+    min-width: webkit-fill-available;
+    padding: 4rem;
+    position: relative;
+}
+.image{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 250px;
+    background-size: contain;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    color: var(--couleur-primaire);
+    text-transform:uppercase;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+.bar_right h2{
+    width: 300px;
+}
+
+.grid h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    margin: auto; 
+    transform: translate(-50%, -50%);
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    min-width: 236px;
+    color: var(--couleur-primaire);
+    text-transform:uppercase;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+    text-align: center;
+}
+
+.grid{
+    display:grid;
+    gap:10px;
+}
+
+.card{
+    max-width: 304px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--couleur-secondaire);
+    }
+
+.card h3{
+        min-width: 236px;
+        text-transform:uppercase;
+        display: contents;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--couleur-tertiaire);
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin:15px
+}
+
+.toge{
+    position: relative;
+    top: -2rem;
+    margin: auto;
+}
+
+.recents{
+    gap:15px;
+    display: grid;
+    justify-content: center;
+}
+
+.recents h2{
+    width: 300px;
+}
+
+.img{
+    background-size: cover;
+    height: 180px;
+    min-width: 100%;
+    position: relative;
+}
+
+.margin{
+    margin:0 10%;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 240px;
+}
+
+.gris{
+    color:var(--couleur-tertiaire);
+    text-transform: uppercase;
+}
+
+.profileCard{
+    max-width: 304px;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+     background-image: url(./bg-profilecard.jpg);
+    background-color:#f7b564cc;
+     background-blend-mode: soft-light;
+    display: grid;
+    justify-items: center;
+    gap:25px;
+    padding:1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(1.5rem); serait à utiliser mais en visant seulement l'image background et non pas tout le profil*/
+    }
+
+.bar_right{
+    margin:3rem 0rem;
+}
+
+.center{
+    display: grid;
+    justify-content: center;
+}
+
+.centerV2{
+    display: grid;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.rs{
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.shape1 {
+  clip-path: circle(49%);/* Pour bien découper l'image carré en un cercle*/
+}
+
+.categories{
+    display:flex;
+    justify-content: space-between;
+    color:white;
+    margin-top: 0.5rem;
+}
+
+.featureCardBiere{
+    min-height:350px;
+    max-width: 304px;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-image: url(./Bieres.jpg);
+    color:var(--couleur-primaire);
+    text-transform:uppercase;
+    padding: 0.5rem;
+    background-repeat:no-repeat;
+}
+
+.rectangle{
+  border:solid 1px var(--couleur-primaire);
+  border: solid 1px var(--couleur-primaire);
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  display: grid;
+  gap: 5px;
+  padding-top: 12.5rem;
+}
+
+.featureCardCafe{
+    min-height:350px;
+    max-width: 304px;
+    margin: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    background-image: url(./Cafe.jpg);
+    color:var(--couleur-primaire);
+    text-transform:uppercase;
+    padding: 0.5rem;
+    background-repeat:no-repeat;
+}
+
+.bar_right button{
+  border: none;
+  outline: 0;
+  padding: 8px 16px;
+  color: white;
+  background-color: var(--couleur-tertiaire);
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  margin:15px
+}
+
+.galleriePhoto{
+    display: grid;
+    gap:1rem;
+    max-width: 300px;
+}
+
+footer{
+    background-image: url(./footer.jpg);
+    background-color:#000000c2;
+    background-blend-mode: soft-light;
+    display: grid;
+    justify-items: center;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    height: 396px;
+    padding: 3rem;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar_footer{
+    justify-content:space-between;
+    padding:16px 32px;
+    display: grid;
+    justify-content:center;
+    list-style-type: none;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap:15px;
+    text-transform:uppercase;
+    justify-content: center;
+}
+
+  @media screen and (min-width: 1024px) and (max-width: 1728px) {
+
+    .header{
+    min-height: 441px;
+    background-image: url(./bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.grid{
+    display:flex;
+    gap:10px;
+}
+
+    #soupe{
+        grid-column: 1;
+    }
+
+    #salade{
+        grid-column: 2;
+    }
+
+    #dessert{
+        grid-column:3;
+    }
+
+    .centerV2{
+    display: contents;
+    max-width: none;
+}
+
+    .grid2{
+        display: grid;
+        grid-template-columns: 589px 292px;
+        gap:2rem;
+        justify-content: center;
+    }
+
+
+    .bar_right{
+        grid-column: 2;
+        min-width: 289px;
+        margin-top: 0;
+    }
+
+    .recents{
+    display: grid;
+    gap:5px;
+    min-width: 100%;
+    height: 100%;
+    grid-template-rows: 39px 1fr 1fr 1fr;
+    grid-template-columns:  1fr  1fr ;
+    grid-column: 1;
+    }
+
+.recents h2{
+    width: auto;
+}
+    #card1{
+    grid-column: 1/span 2;
+    grid-row: 1;
+    }
+
+    #card2{
+        grid-column: 1/span 2;
+        grid-row: 2;
+        min-width:589px;
+    }
+
+    #card3{
+        grid-column: 1;
+         grid-row:3;
+    }
+
+    #card4{
+        grid-column: 2;
+        grid-row:3;
+    }
+
+    #card5{
+        grid-column: 1/span 2;
+        grid-row: 4;
+        min-width:589px;
+    }
+
+  .margin{
+    margin: 0px 31%;
+    white-space: inherit;
+    overflow: visible;
+    max-width: 240px;
+    display: block;
+    }
+    
+    .galleriePhoto{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        justify-content: center;
+        width: 933px;
+        max-width: none;
+    }
+
+    .galleriePhoto > h2{
+        grid-column: 1/span 3;
+    }
+
+    .galleriePhoto > img{
+        min-height: 100%;
+}
+    .center{
+        display: grid;
+        justify-content: center;
+    }
+
+}
+
+  @media screen and (min-width: 1729px) {
+
+
+    .header{
+    min-height: 441px;
+    background-image: url(./bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.grid{
+    display:flex;
+    gap:10px;
+}
+
+    #soupe{
+        grid-column: 1;
+    }
+
+    #salade{
+        grid-column: 2;
+    }
+
+    #dessert{
+        grid-column:3;
+    }
+
+        .centerV2{
+    display: contents;
+    max-width: none;
+}
+    .grid2{
+        display: grid;
+        grid-template-columns: 589px 292px;
+        gap: 2rem;
+       justify-content: center;
+    }
+
+
+    .bar_right{
+        grid-column: 2;
+        min-width: 289px;
+        margin-top: 0;
+    }
+
+    .recents{
+    display: grid;
+    gap:5px;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 39px 1fr 1fr 1fr;
+    grid-template-columns:  1fr  1fr ;
+    grid-column: 1;
+    }
+
+.recents h2{
+    width: auto;
+}
+
+    #card1{
+    grid-column: 1/span 2;
+    grid-row: 1;
+    }
+
+    #card2{
+        grid-column: 1/span 2;
+        grid-row: 2;
+        min-width:589px;
+    }
+
+    #card3{
+        grid-column: 1;
+         grid-row:3;
+    }
+
+    #card4{
+        grid-column: 2;
+        grid-row:3;
+    }
+
+    #card5{
+        grid-column: 1/span 2;
+        grid-row: 4;
+        min-width:589px;
+    }
+
+  .margin{
+    margin: 0px 31%;
+    white-space: inherit;
+    overflow: visible;
+    max-width: 240px;
+    display: block;
+    }
+
+    .galleriePhoto{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        width: 933px;
+        max-width: none;
+    }
+
+     .galleriePhoto > img {
+    min-height: 100%;
+  }
+
+      .galleriePhoto > h2{
+        grid-column: 1/span 3;
+    }
+  }
+

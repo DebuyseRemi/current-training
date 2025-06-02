@@ -1,0 +1,465 @@
+:root {
+  --couleur-primaire:#CCA57C;
+  --couleur-secondaire:#272727;
+  --couleur-tertiaire: #606060;
+  --couleur-clair:white;
+}
+
+.poppins-light {
+    font-family: "Roboto", sans-serif;
+
+}
+
+body
+{
+    font-family: Roboto;
+    color: var(--couleur-clair);
+    height: auto;
+}
+
+
+#navbar{
+    max-width:-moz-available; /*seulement pour mozilla */
+    max-width: webkit-fill-available; /* pour navigateur autre que mozilla*/
+    /*position: fixed;Nécessaire pour avoir la barre qui reste affichée pendant le défilement
+    top: 0;/*Nécessaire pour avoir la barre en haut et non pas ailleurs sur la page*/
+    display: flex;
+    color:var(--couleur-clair);
+    justify-content: center;
+    padding: 0rem;
+    text-transform:uppercase;
+    gap: 2rem;
+}
+
+#navbar a{
+  text-align: center;
+  color:inherit;
+  text-decoration: none;
+}
+
+
+#navbar h3{
+  padding: 1em;
+}
+
+header{
+  background-image:url(./bg_header.jpg);
+  background-position: center;
+background-repeat: no-repeat;
+position: relative;
+background-size: cover;
+  height: 600px;
+  padding-left: 15%;
+    padding-right:15%;
+}
+
+.imgLogo{
+  background-image: url(./logo_header.png);
+  min-width: 18rem;
+}
+
+.imgLogo:hover{
+  background-image: url(./logo_hover.png);
+  min-width: 18rem;
+}
+
+
+main{
+  background-color:var(--couleur-tertiaire) ;
+  height: auto;
+  padding-left: 15%;
+    padding-right:15%;
+}
+
+footer{
+  background-image: url(./bg_footer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  min-width: -moz-available;
+  min-width: webkit-fill-available;
+  background-size: cover;
+  height: 496px;
+}
+
+.Adroite{
+    display: flex;
+    flex-direction:column;
+    padding: 1em;
+    padding-right: 0;
+    justify-content:end;
+    text-align: end;
+    max-width: 32rem;
+    position:absolute;
+    bottom: 15%;
+    right: 20%;
+  
+
+}
+
+.Adroite h1{
+  font-size: xxx-large;
+  font-weight: 400;
+  text-transform:uppercase;
+}
+
+header button{
+  background-color:var(--couleur-primaire);
+  border: none;
+  border-radius: 15px;
+  color:var(--couleur-clair);
+  padding: 0.2em 0.8em;
+  margin-left: auto; 
+  margin-right: 0;
+  display: flex;
+}
+
+#hall{
+  background-color: var(--couleur-secondaire);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 698px;
+}
+
+#hall h1{
+  display: flex;
+  justify-content: center;
+  padding-top:5rem;
+  margin-bottom: 5rem;
+}
+
+.couleur{
+  color:var(--couleur-primaire);
+  display: inline;
+}
+
+.couleurMarge{
+  color:var(--couleur-primaire);
+  display: inline;
+  border-left: solid;
+  padding-left: 2rem;
+}
+
+.grid{
+display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    width: 100%;
+    height:fit-content;
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.texte{
+  font-weight: 300;
+  grid-column: 1;
+  size: fit-content;
+  display: grid;
+  gap: 1rem;
+  justify-content: inherit;
+}
+
+.texte p{
+  size:fit-content;
+}
+
+.imagehall{
+  background-image:url(./london_hall.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: inherit;
+  grid-column: 2;
+  max-width:15rem;
+  height: auto;
+}
+
+.grid button{
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:var(--couleur-primaire);
+  border:none;
+  color:var(--couleur-clair);
+  position:absolute;
+  right:28%;
+  top:90%;
+}
+
+.grid2{
+  display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    max-width: 100%;
+    height:fit-content;
+    gap: 40px;
+}
+
+#projects{
+  background-color:var(--couleur-primaire);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 668px;
+}
+
+#projects h1{
+  display: flex;
+  justify-content: center;
+  padding-top:5rem;
+  margin-bottom: 5rem;
+}
+
+.couleurNoir{
+  color:var(--couleur-secondaire);
+  display: inline;
+}
+
+.imageParis{
+  background-image:url(./paris.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  grid-column: 1;
+  max-width:18rem;
+  height: auto;
+}
+
+.imageLondon{
+  background-image:url(./london.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  grid-column: 2;
+  max-width:18rem;
+  height: auto;
+}
+
+.container{
+  display: flex;
+  grid-column: 3;
+  height:400px;
+  flex-direction: column;
+  margin-right:59px;
+  gap:7px;
+}
+
+.imageLogo{
+  background-image:url(./logo12.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width:100%;
+  height: 47%;
+  margin-top:1.5rem;
+}
+
+
+.grid2 .button{
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:var(--couleur-secondaire);
+  border:none;
+  color:var(--couleur-clair);
+  position:absolute;
+  right:33%;
+  top:77%;
+}
+
+.grid2 .btn{
+  display: flex;
+  width: fit-content;
+  padding: 0.2em 0.8em;
+  background-color:var(--couleur-secondaire);
+  border:none;
+  color:var(--couleur-clair);
+  position:absolute;
+  right:40%;
+  top:77%;
+}
+
+
+
+#services{
+  background-color: var(--couleur-secondaire);
+  padding-left: 3rem;
+  padding-right: 3rem;
+  height: 779px;
+}
+
+#services h1{
+  display: flex;
+  justify-content: center;
+  padding-top:5rem;
+  margin-bottom: 5rem;
+}
+
+
+
+.containerV2{
+    display: flex;
+    width:100%;
+    margin-top:10%;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.89);
+    padding-left: 2%;  
+    grid-column: 3;
+    grid-row:2;
+    max-height: 313px;
+    padding: 1rem;
+    gap: 1rem;
+  display: grid;
+}
+  
+.containerV3{
+    width:100%;
+    margin-top:10%;
+    border-radius: 3px;
+    background-color:var(--couleur-primaire);
+    padding: 2rem;  
+    background-image: url(visuelgauche.jpg);
+    grid-column: 2;
+    grid-row:2;
+    max-height: 313px;
+  }
+
+  .logoPoly{
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    background-image: url(poly-logo.png);
+    height: 10rem;
+  }
+
+  .logo3D{
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    background-image:url(3d-logo.png);
+    height: 10rem;
+  }
+
+  #colonne1{
+  grid-column: 1;
+  display: flex;
+  height: 517px;
+  flex-direction:column;
+  gap:39px;
+  }
+
+
+  #colonne1 button{
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-primaire);
+    height: fit-content;
+    border: none;
+    border-left: solid 2px var(--couleur-primaire) ;
+    max-width: 50%;
+    text-align: end;
+    padding-right: 1rem;
+  }
+
+  #colonne2{
+  grid-column: 2;
+  display: flex;
+  height: 517px;
+  flex-direction:column;
+  gap:62px;
+
+  }
+
+    #colonne2 button{
+    background-color: var(--couleur-tertiaire);
+    color: var(--couleur-primaire);
+    height: fit-content;
+    border: none;
+    border-left: solid 2px var(--couleur-primaire) ;
+    max-width: 50%;
+    text-align: end;
+    padding-right: 1rem;
+  }
+
+  #colonne3{
+  grid-column: 3;
+  justify-content: end;
+  display: grid;
+  height: 517px;
+  text-align: end;
+  padding-left:54px;
+  }
+
+  .monde{
+    background-image: url(map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: inherit;
+    height: 10rem;
+  }
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 375px 375px 1fr;
+    width: 100%;
+    grid-template-rows: 91px 313px 91px;
+    height:fit-content;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  color:var(--couleur-primaire);
+  height: 1px;
+  min-width: -moz-available;
+  min-width: webkit-fill-available;
+} 
+
+#name,#message,#email{
+    width: 95%;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: var(--couleur-clair);
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    color:var(--couleur-clair);
+    margin-bottom: 1rem;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity:none;
+  color: var(--couleur-clair);
+}
+
+textarea::placeholder {
+  font-weight: bold;
+  opacity: none;
+  color:var(--couleur-clair);
+}
+
+
+.containerV2 button{
+  text-transform: uppercase;
+  color: var(--couleur-clair);
+  background-color: var(--couleur-primaire);
+  border:none;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.aligne{
+  position: absolute;
+  top:3rem;
+  left:3.5rem;
+}
+
+.containerV3 h1{
+  font-size: 24px;
+  font-weight: 600;
+}
