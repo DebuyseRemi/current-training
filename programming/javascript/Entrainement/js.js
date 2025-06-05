@@ -298,10 +298,21 @@ boutonCouleur.addEventListener("click",function(){
 
 var ul = document.getElementById("maListe");
 var li = document.createElement("li");
-var texte = document.createTextNode("Nouvelle élément");
+var texte = document.createTextNode("Nouvel élément");
 
 let boutonLigne = document.getElementById("maLigne")
 
 boutonLigne.addEventListener("click",function(){
 li.appendChild(texte);
 ul.appendChild(li); })
+
+function moinsLigne()
+{
+    var ul = document.getElementById('moinsListe');
+    ul.removeChild(ul.firstElementChild);
+}
+
+function showId(clicked_id)
+    {
+        console.log(clicked_id);
+    }
