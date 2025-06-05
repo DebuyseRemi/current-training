@@ -1,0 +1,27 @@
+body {
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
+.cellule{
+    width: 150px;
+    height: 150px;
+    font-size: xx-large;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+}
+
+.global{
+    display: flex;
+    background-color: gray;
+  margin: 0 auto;
+  padding: 15px;
+  display: inline-flex;
+}
+
+.global div {
+  margin: 0 auto;
+  overflow: hidden;
+}

@@ -284,3 +284,24 @@ const numbers2 = [1, 2, 2, 3, 4, 2, 5, 2];
 console.log(countOccurrences(numbers2, 2)); // Résultat attendu : 4
 
 
+let bouton = document.getElementById("monBouton");
+let pTexte = document.getElementById('texte')
+
+bouton.addEventListener("click",function(){
+    pTexte.innerText+='Hello, world';}
+)
+
+let boutonCouleur = document.getElementById("maCouleur");
+
+boutonCouleur.addEventListener("click",function(){
+    document.getElementById('texte').style.color="red";})
+
+var ul = document.getElementById("maListe");
+var li = document.createElement("li");
+var texte = document.createTextNode("Nouvelle élément");
+
+let boutonLigne = document.getElementById("maLigne")
+
+boutonLigne.addEventListener("click",function(){
+li.appendChild(texte);
+ul.appendChild(li); })

@@ -5,7 +5,7 @@ body {
 
 #morpion{
   background-color: gray;
-  display: inline-block;
+  display: inline-flex;
   margin: 0 auto;
   padding: 15px;
 }
@@ -15,7 +15,7 @@ body {
   overflow: hidden;
 }
 
-#morpion button{
+#morpion .cellule{
      width: 150px;
     height: 150px;
     font-size: xx-large;

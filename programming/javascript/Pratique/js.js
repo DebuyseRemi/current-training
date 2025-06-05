@@ -114,8 +114,13 @@ var Afficheur = function(element) {
   return { sendMessage: setText };
 };
 
-var scoreX=0;
-var scoreO=0;
+function reset(pions){
+    for(i=0;i<9;i++)
+    {
+        pions[i].innerHTML = "";
+    }
+  }
+
 
 function main() {
   var pions = document.querySelectorAll("#Morpio, button");
@@ -129,11 +134,11 @@ function main() {
       " c'est votre tour. <br /> Joueur "+
       joueurs[0] +
       " a pour score " +
-      scoreX +
+      localStorage.getItem("scoreX") +
       "<br /> Joueur "+
       joueurs[1] +
       " a pour score " +
-      scoreO 
+      localStorage.getItem("scoreO") 
       
   );
   for (var i = 0, len = pions.length; i < len; i++) {
@@ -151,25 +156,24 @@ function main() {
         jeuEstFini = rechercherVainqueur(pions, joueurs, tour);
 
         if (jeuEstFini) {
-            if(joueurs[tour]%2===0){
-                scoreX++;
+            if(joueurs[tour]%2==0){
                 console.log("Ca marche ici en X")
             }
             else{
-                scoreO++;
                 console.log("Ca marche ici en O")
+
             }
           afficheur.sendMessage(
             "Le joueur " +
               joueurs[tour] +
-              ' a gagné ! <br /> <a href="index.html">Rejouer</a>'
+              ' a gagné ! <br /> '
           );
           return;
         }
 
         if (matchNul(pions)) {
           afficheur.sendMessage(
-            'Match Nul ! <br/> <a href="index.html">Rejouer</a>'
+            'Match Nul ! <br/> >'
           );
           return;
         }
@@ -183,3 +187,4 @@ function main() {
 }
 
 main();
+
