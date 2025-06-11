@@ -172,8 +172,9 @@ console.log(data.topping[0])
 console.log(data.batters.batter[0].type, " est l'id ",data.batters.batter[0].id)
 console.log(data.name, " a pour type ", data.topping[6].type);
 
-devinette(49);
+devinette(prompt("Saisir un chiffre entre 1 et 100 svp"));
 
+/*
 function nombre(mois){
     while(mois<1 || mois>12){
         console.log("Erreur, saisissez un mois valide svp");
@@ -203,7 +204,45 @@ function nombre(mois){
         }
     }
 
-console.log( "Il y a autant de jours dans ce mois :", nombre(0));
+console.log( "Il y a autant de jours dans ce mois :", nombre(prompt("Saisir un numéro de mois svp")));*/
+
+let mois = prompt("Saisir un numéro de mois svp");
+
+   while(mois<1 || mois>12){
+        console.log("Erreur, saisissez un mois valide svp");
+        mois=prompt();
+    }
+
+
+let annee
+    function nombre(mois){
+    switch(mois){
+        case "1":
+        case "3":
+        case "5":
+        case "7":
+        case "8":
+        case "10":
+        case "12":
+            return " 31 jours";
+        case "4":
+        case "6":
+        case "9":
+        case "11":
+            return " 30 jours";
+        case "2":
+            annee=prompt("Saisir l'année svp")
+            if((annee % 4 === 0 && annee % 100 > 0) || (annee % 400 === 0)){
+            return "29 jours car bissextile";
+            }
+            else{
+            return "28 jours";
+            }
+    }
+}
+
+let resultat = nombre(mois);
+console.log( "Il y a autant de jours dans ce mois :"+ resultat);
 
 
 
@@ -296,15 +335,19 @@ let boutonCouleur = document.getElementById("maCouleur");
 boutonCouleur.addEventListener("click",function(){
     document.getElementById('texte').style.color="red";})
 
+
+
 var ul = document.getElementById("maListe");
 var li = document.createElement("li");
 var texte = document.createTextNode("Nouvel élément");
-
 let boutonLigne = document.getElementById("maLigne")
+
 
 boutonLigne.addEventListener("click",function(){
 li.appendChild(texte);
 ul.appendChild(li); })
+
+
 
 function moinsLigne()
 {
