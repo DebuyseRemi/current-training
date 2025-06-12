@@ -1,0 +1,47 @@
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav span{
+ width: 100%;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgba(0, 0, 0, 0.801);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 20px;
+  width: 13px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgba(0, 0, 0, 0.767);
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
