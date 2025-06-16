@@ -17,7 +17,6 @@
   
   /* 5. Improve media defaults */
   img, picture, video, canvas, svg {
-    display: block;
     max-width: 100%;
   }
   
@@ -54,6 +53,8 @@
 
 body{
     background-color: aquamarine;
+    text-align: center;
+    margin-top: 5%;
 }
 
 input{
@@ -63,5 +64,8 @@ input{
 }
 
 button{
-    border-radius: none;
+    border: none;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin-bottom: 2%;
 }
