@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+div{
+    border: solid 1px;
+    margin: 1rem;
+}
+
+img:hover{
+    transform: scale(1.1);
+}

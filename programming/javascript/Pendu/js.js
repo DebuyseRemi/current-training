@@ -1,3 +1,8 @@
+fetch("https://trouve-mot.fr/api/random")
+ .then((response) => response.json())
+ .then((words) => console.log(words.name))
+
+
 let mot=prompt("Saisir le mot à faire deviner svp")//Récupération du mot
 mot=mot.toLowerCase();//Conversion du mot en petit caractère pour éviter des problèmes à chercher la première lettre en majuscule
 let lettre =" ";
